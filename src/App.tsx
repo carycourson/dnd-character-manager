@@ -1,3 +1,4 @@
+// import { useState, useEffect } from 'react';
 import { useState } from 'react';
 import { AppShell } from './components/layout';
 import type { ViewName } from './components/layout';
@@ -9,6 +10,18 @@ function App() {
   
   // Placeholder - will come from state/storage later
   const hasCharacters = false;
+
+// // Temporary storage test - remove after verification
+//   useEffect(() => {
+//     async function testStorage() {
+//       const { getAllCharacters, getCharacterCount } = await import('./storage');
+//       const count = await getCharacterCount();
+//       const characters = await getAllCharacters();
+//       console.log(`[Storage Test] ${count} characters in IndexedDB:`, characters);
+//     }
+//     testStorage();
+//   }, []);
+
 
   // Show loading state
   if (isLoading) {
