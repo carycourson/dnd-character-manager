@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-19T14:42:25.609Z",
+  "files": {
+    "races": {
+      "count": 135,
+      "hash": "e97441cf8d3a7330e3c6b364d2bf1520"
+    },
+    "classes": {
+      "count": 17,
+      "hash": "215fc52d3732c1a609ca5faac6527d45"
+    },
+    "backgrounds": {
+      "count": 126,
+      "hash": "cd4eb8f564171c4afae1abc4b36caab0"
+    },
+    "spells": {
+      "count": 527,
+      "hash": "9ad5cd25fa234c07239ba92a4bf9cbe1"
+    },
+    "items": {
+      "count": 1855,
+      "hash": "f9c92581250ca33fe52d35867e844446"
+    },
+    "feats": {
+      "count": 115,
+      "hash": "2f43582e7142e95f51be8c5270f1a486"
+    }
+  }
+}

@@ -1,0 +1,7188 @@
+{
+  "artificer|tce": {
+    "key": "artificer|tce",
+    "name": "Artificer",
+    "source": "TCE",
+    "page": 9,
+    "hitDie": 8,
+    "savingThrows": [
+      "con",
+      "int"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "weapons": [
+        "simple",
+        {
+          "proficiency": "firearms",
+          "optional": true
+        }
+      ],
+      "tools": [
+        "{@item thieves' tools|PHB}",
+        "{@item tinker's tools|PHB}",
+        "one type of {@item artisan's tools|PHB} of your choice"
+      ],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "history",
+              "investigation",
+              "medicine",
+              "nature",
+              "perception",
+              "sleight of hand"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Optional Rule: Firearm Proficiency",
+        "className": "Artificer",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Magical Tinkering",
+        "className": "Artificer",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Artificer",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Infuse Item",
+        "className": "Artificer",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Artificer Specialist",
+        "className": "Artificer",
+        "level": 3,
+        "source": "TCE",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "The Right Tool for the Job",
+        "className": "Artificer",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Artificer",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Artificer Specialist Feature",
+        "className": "Artificer",
+        "level": 5,
+        "source": "TCE",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Tool Expertise",
+        "className": "Artificer",
+        "level": 6,
+        "source": "TCE"
+      },
+      {
+        "name": "Flash of Genius",
+        "className": "Artificer",
+        "level": 7,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Artificer",
+        "level": 8,
+        "source": "TCE"
+      },
+      {
+        "name": "Artificer Specialist Feature",
+        "className": "Artificer",
+        "level": 9,
+        "source": "TCE",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Magic Item Adept",
+        "className": "Artificer",
+        "level": 10,
+        "source": "TCE"
+      },
+      {
+        "name": "Spell-Storing Item",
+        "className": "Artificer",
+        "level": 11,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Artificer",
+        "level": 12,
+        "source": "TCE"
+      },
+      {
+        "name": "Magic Item Savant",
+        "className": "Artificer",
+        "level": 14,
+        "source": "TCE"
+      },
+      {
+        "name": "Artificer Specialist Feature",
+        "className": "Artificer",
+        "level": 15,
+        "source": "TCE",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Artificer",
+        "level": 16,
+        "source": "TCE"
+      },
+      {
+        "name": "Magic Item Master",
+        "className": "Artificer",
+        "level": 18,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Artificer",
+        "level": 19,
+        "source": "TCE"
+      },
+      {
+        "name": "Soul of Artifice",
+        "className": "Artificer",
+        "level": 20,
+        "source": "TCE"
+      }
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "casterType": "artificer",
+      "cantripsKnown": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnown": null,
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "int": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "tools": [
+          "{@item thieves' tools|PHB}",
+          "{@item tinker's tools|PHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "thieves' tools": true,
+            "tinker's tools": true
+          }
+        ]
+      }
+    },
+    "subclassTitle": "Artificer Specialist",
+    "subclassLevel": 3,
+    "srd": false,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "alchemist|tce",
+        "name": "Alchemist",
+        "shortName": "Alchemist",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Alchemist",
+            "level": 1
+          },
+          {
+            "name": "Alchemical Savant",
+            "level": 1
+          },
+          {
+            "name": "Restorative Reagents",
+            "level": 1
+          },
+          {
+            "name": "Chemical Mastery",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "armorer|tce",
+        "name": "Armorer",
+        "shortName": "Armorer",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Armorer",
+            "level": 1
+          },
+          {
+            "name": "Extra Attack",
+            "level": 1
+          },
+          {
+            "name": "Armor Modifications",
+            "level": 1
+          },
+          {
+            "name": "Perfected Armor",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "artillerist|tce",
+        "name": "Artillerist",
+        "shortName": "Artillerist",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Artillerist",
+            "level": 1
+          },
+          {
+            "name": "Arcane Firearm",
+            "level": 1
+          },
+          {
+            "name": "Explosive Cannon",
+            "level": 1
+          },
+          {
+            "name": "Fortified Position",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "battle-smith|tce",
+        "name": "Battle Smith",
+        "shortName": "Battle Smith",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Battle Smith",
+            "level": 1
+          },
+          {
+            "name": "Extra Attack",
+            "level": 1
+          },
+          {
+            "name": "Arcane Jolt",
+            "level": 1
+          },
+          {
+            "name": "Improved Defender",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "barbarian|phb": {
+    "key": "barbarian|phb",
+    "name": "Barbarian",
+    "source": "PHB",
+    "page": 46,
+    "hitDie": 12,
+    "savingThrows": [
+      "str",
+      "con"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "animal handling",
+              "athletics",
+              "intimidation",
+              "nature",
+              "perception",
+              "survival"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Rage",
+        "className": "Barbarian",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Unarmored Defense",
+        "className": "Barbarian",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Danger Sense",
+        "className": "Barbarian",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Reckless Attack",
+        "className": "Barbarian",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Primal Path",
+        "className": "Barbarian",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Primal Knowledge",
+        "className": "Barbarian",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Barbarian",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Barbarian",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Fast Movement",
+        "className": "Barbarian",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Path Feature",
+        "className": "Barbarian",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Feral Instinct",
+        "className": "Barbarian",
+        "level": 7,
+        "source": "PHB"
+      },
+      {
+        "name": "Instinctive Pounce",
+        "className": "Barbarian",
+        "level": 7,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Barbarian",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Brutal Critical (1 die)",
+        "className": "Barbarian",
+        "level": 9,
+        "source": "PHB"
+      },
+      {
+        "name": "Path feature",
+        "className": "Barbarian",
+        "level": 10,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Relentless Rage",
+        "className": "Barbarian",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Barbarian",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Brutal Critical (2 dice)",
+        "className": "Barbarian",
+        "level": 13,
+        "source": "PHB"
+      },
+      {
+        "name": "Path feature",
+        "className": "Barbarian",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Persistent Rage",
+        "className": "Barbarian",
+        "level": 15,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Barbarian",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Brutal Critical (3 dice)",
+        "className": "Barbarian",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Indomitable Might",
+        "className": "Barbarian",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Barbarian",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Primal Champion",
+        "className": "Barbarian",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": {
+      "requirements": {
+        "str": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ]
+      }
+    },
+    "subclassTitle": "Primal Path",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "path-of-the-berserker|phb",
+        "name": "Path of the Berserker",
+        "shortName": "Berserker",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Berserker",
+            "level": 1
+          },
+          {
+            "name": "Mindless Rage",
+            "level": 1
+          },
+          {
+            "name": "Intimidating Presence",
+            "level": 1
+          },
+          {
+            "name": "Retaliation",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-totem-warrior|phb",
+        "name": "Path of the Totem Warrior",
+        "shortName": "Totem Warrior",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Totem Warrior",
+            "level": 1
+          },
+          {
+            "name": "Aspect of the Beast",
+            "level": 1
+          },
+          {
+            "name": "Spirit Walker",
+            "level": 1
+          },
+          {
+            "name": "Totemic Attunement",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-battlerager|scag",
+        "name": "Path of the Battlerager",
+        "shortName": "Battlerager",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Battlerager",
+            "level": 1
+          },
+          {
+            "name": "Reckless Abandon",
+            "level": 1
+          },
+          {
+            "name": "Battlerager Charge",
+            "level": 1
+          },
+          {
+            "name": "Spiked Retribution",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-ancestral-guardian|xge",
+        "name": "Path of the Ancestral Guardian",
+        "shortName": "Ancestral Guardian",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Ancestral Guardian",
+            "level": 1
+          },
+          {
+            "name": "Spirit Shield",
+            "level": 1
+          },
+          {
+            "name": "Consult the Spirits",
+            "level": 1
+          },
+          {
+            "name": "Vengeful Ancestors",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-storm-herald|xge",
+        "name": "Path of the Storm Herald",
+        "shortName": "Storm Herald",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Storm Herald",
+            "level": 1
+          },
+          {
+            "name": "Storm Soul",
+            "level": 1
+          },
+          {
+            "name": "Shielding Storm",
+            "level": 1
+          },
+          {
+            "name": "Raging Storm",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-zealot|xge",
+        "name": "Path of the Zealot",
+        "shortName": "Zealot",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Zealot",
+            "level": 1
+          },
+          {
+            "name": "Fanatical Focus",
+            "level": 1
+          },
+          {
+            "name": "Zealous Presence",
+            "level": 1
+          },
+          {
+            "name": "Rage beyond Death",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-beast|tce",
+        "name": "Path of the Beast",
+        "shortName": "Beast",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Beast",
+            "level": 1
+          },
+          {
+            "name": "Bestial Soul",
+            "level": 1
+          },
+          {
+            "name": "Infectious Fury",
+            "level": 1
+          },
+          {
+            "name": "Call the Hunt",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-wild-magic|tce",
+        "name": "Path of Wild Magic",
+        "shortName": "Wild Magic",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Path of Wild Magic",
+            "level": 1
+          },
+          {
+            "name": "Bolstering Magic",
+            "level": 1
+          },
+          {
+            "name": "Unstable Backlash",
+            "level": 1
+          },
+          {
+            "name": "Controlled Surge",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-juggernaut|tdcsr",
+        "name": "Path of the Juggernaut",
+        "shortName": "Juggernaut",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Juggernaut",
+            "level": 1
+          },
+          {
+            "name": "Demolishing Might",
+            "level": 1
+          },
+          {
+            "name": "Resolute Stance",
+            "level": 1
+          },
+          {
+            "name": "Thunderous Blows (10th Level)",
+            "level": 1
+          },
+          {
+            "name": "Hurricane Strike",
+            "level": 1
+          },
+          {
+            "name": "Unstoppable",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "path-of-the-giant|bgg",
+        "name": "Path of the Giant",
+        "shortName": "Giant",
+        "source": "BGG",
+        "subclassFeatures": [
+          {
+            "name": "Path of the Giant",
+            "level": 1
+          },
+          {
+            "name": "Elemental Cleaver",
+            "level": 1
+          },
+          {
+            "name": "Mighty Impel",
+            "level": 1
+          },
+          {
+            "name": "Demiurgic Colossus",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "bard|phb": {
+    "key": "bard|phb",
+    "name": "Bard",
+    "source": "PHB",
+    "page": 51,
+    "hitDie": 8,
+    "savingThrows": [
+      "dex",
+      "cha"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light"
+      ],
+      "weapons": [
+        "simple",
+        "{@item hand crossbow|phb|hand crossbows}",
+        "{@item longsword|phb|longswords}",
+        "{@item rapier|phb|rapiers}",
+        "{@item shortsword|phb|shortswords}"
+      ],
+      "tools": [
+        "three {@item musical instrument|PHB|musical instruments} of your choice"
+      ],
+      "skills": [
+        {
+          "any": 3
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Bardic Inspiration",
+        "className": "Bard",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Bard",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Jack of All Trades",
+        "className": "Bard",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Song of Rest (d6)",
+        "className": "Bard",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Magical Inspiration",
+        "className": "Bard",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Bard College",
+        "className": "Bard",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Expertise",
+        "className": "Bard",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Bard",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Bardic Versatility",
+        "className": "Bard",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Bardic Inspiration (d8)",
+        "className": "Bard",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Font of Inspiration",
+        "className": "Bard",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Countercharm",
+        "className": "Bard",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Bard College feature",
+        "className": "Bard",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Bard",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Song of Rest (d8)",
+        "className": "Bard",
+        "level": 9,
+        "source": "PHB"
+      },
+      {
+        "name": "Bardic Inspiration (d10)",
+        "className": "Bard",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Expertise",
+        "className": "Bard",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Magical Secrets",
+        "className": "Bard",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Bard",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Song of Rest (d10)",
+        "className": "Bard",
+        "level": 13,
+        "source": "PHB"
+      },
+      {
+        "name": "Magical Secrets",
+        "className": "Bard",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Bard College feature",
+        "className": "Bard",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Bardic Inspiration (d12)",
+        "className": "Bard",
+        "level": 15,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Bard",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Song of Rest (d12)",
+        "className": "Bard",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Magical Secrets",
+        "className": "Bard",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Bard",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Superior Inspiration",
+        "className": "Bard",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterType": "full",
+      "cantripsKnown": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnown": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        15,
+        16,
+        18,
+        19,
+        19,
+        20,
+        22,
+        22,
+        22
+      ],
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "cha": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "acrobatics",
+                "sleight of hand",
+                "stealth",
+                "arcana",
+                "history",
+                "investigation",
+                "nature",
+                "religion",
+                "animal handling",
+                "insight",
+                "medicine",
+                "perception",
+                "survival",
+                "deception",
+                "intimidation",
+                "performance",
+                "persuasion"
+              ],
+              "count": 1
+            }
+          }
+        ],
+        "tools": [
+          "one {@item musical instrument|PHB} of your choice"
+        ],
+        "toolProficiencies": [
+          {
+            "anyMusicalInstrument": 1
+          }
+        ]
+      }
+    },
+    "subclassTitle": "Bard College",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "college-of-lore|phb",
+        "name": "College of Lore",
+        "shortName": "Lore",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "College of Lore",
+            "level": 1
+          },
+          {
+            "name": "Additional Magical Secrets",
+            "level": 1
+          },
+          {
+            "name": "Peerless Skill",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-valor|phb",
+        "name": "College of Valor",
+        "shortName": "Valor",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "College of Valor",
+            "level": 1
+          },
+          {
+            "name": "Extra Attack",
+            "level": 1
+          },
+          {
+            "name": "Battle Magic",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-glamour|xge",
+        "name": "College of Glamour",
+        "shortName": "Glamour",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "College of Glamour",
+            "level": 1
+          },
+          {
+            "name": "Mantle of Majesty",
+            "level": 1
+          },
+          {
+            "name": "Unbreakable Majesty",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-swords|xge",
+        "name": "College of Swords",
+        "shortName": "Swords",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "College of Swords",
+            "level": 1
+          },
+          {
+            "name": "Extra Attack",
+            "level": 1
+          },
+          {
+            "name": "Master's Flourish",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-whispers|xge",
+        "name": "College of Whispers",
+        "shortName": "Whispers",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "College of Whispers",
+            "level": 1
+          },
+          {
+            "name": "Mantle of Whispers",
+            "level": 1
+          },
+          {
+            "name": "Shadow Lore",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-creation|tce",
+        "name": "College of Creation",
+        "shortName": "Creation",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "College of Creation",
+            "level": 1
+          },
+          {
+            "name": "Animating Performance",
+            "level": 1
+          },
+          {
+            "name": "Creative Crescendo",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-eloquence|tce",
+        "name": "College of Eloquence",
+        "shortName": "Eloquence",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "College of Eloquence",
+            "level": 1
+          },
+          {
+            "name": "Unfailing Inspiration",
+            "level": 1
+          },
+          {
+            "name": "Universal Speech",
+            "level": 1
+          },
+          {
+            "name": "Infectious Inspiration",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-spirits|vrgr",
+        "name": "College of Spirits",
+        "shortName": "Spirits",
+        "source": "VRGR",
+        "subclassFeatures": [
+          {
+            "name": "College of Spirits",
+            "level": 1
+          },
+          {
+            "name": "Spirit Session",
+            "level": 1
+          },
+          {
+            "name": "Mystical Connection",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "college-of-tragedy|tdcsr",
+        "name": "College of Tragedy",
+        "shortName": "Tragedy",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "College of Tragedy",
+            "level": 1
+          },
+          {
+            "name": "Tale of Hubris",
+            "level": 1
+          },
+          {
+            "name": "Impending Misfortune",
+            "level": 1
+          },
+          {
+            "name": "Tale of Hubris (14th Level)",
+            "level": 1
+          },
+          {
+            "name": "Nimbus of Pathos",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cleric|phb": {
+    "key": "cleric|phb",
+    "name": "Cleric",
+    "source": "PHB",
+    "page": 56,
+    "hitDie": 8,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "weapons": [
+        "simple"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "history",
+              "insight",
+              "medicine",
+              "persuasion",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Spellcasting",
+        "className": "Cleric",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Domain",
+        "className": "Cleric",
+        "level": 1,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Channel Divinity",
+        "className": "Cleric",
+        "level": 2,
+        "source": "PHB",
+        "gainSubclassFeature": false
+      },
+      {
+        "name": "Channel Divinity: Harness Divine Power",
+        "className": "Cleric",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Divine Domain feature",
+        "className": "Cleric",
+        "level": 2,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Cleric",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Cantrip Versatility",
+        "className": "Cleric",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Destroy Undead (CR 1/2)",
+        "className": "Cleric",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Channel Divinity",
+        "className": "Cleric",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": false
+      },
+      {
+        "name": "Divine Domain feature",
+        "className": "Cleric",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Cleric",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Destroy Undead (CR 1)",
+        "className": "Cleric",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Domain feature",
+        "className": "Cleric",
+        "level": 8,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Divine Intervention",
+        "className": "Cleric",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Destroy Undead (CR 2)",
+        "className": "Cleric",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Cleric",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Destroy Undead (CR 3)",
+        "className": "Cleric",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Cleric",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Destroy Undead (CR 4)",
+        "className": "Cleric",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Domain feature",
+        "className": "Cleric",
+        "level": 17,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Channel Divinity",
+        "className": "Cleric",
+        "level": 18,
+        "source": "PHB",
+        "gainSubclassFeature": false
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Cleric",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Intervention Improvement",
+        "className": "Cleric",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "casterType": "full",
+      "cantripsKnown": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellsKnown": null,
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "wis": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ]
+      }
+    },
+    "subclassTitle": "Divine Domain",
+    "subclassLevel": 1,
+    "srd": true,
+    "basicRules": true,
+    "subclasses": [
+      {
+        "key": "knowledge-domain|phb",
+        "name": "Knowledge Domain",
+        "shortName": "Knowledge",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Knowledge Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Knowledge of the Ages",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Read Thoughts",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Visions of the Past",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "life-domain|phb",
+        "name": "Life Domain",
+        "shortName": "Life",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Life Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Preserve Life",
+            "level": 1
+          },
+          {
+            "name": "Blessed Healer",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Supreme Healing",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "light-domain|phb",
+        "name": "Light Domain",
+        "shortName": "Light",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Light Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Radiance of the Dawn",
+            "level": 1
+          },
+          {
+            "name": "Improved Flare",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Corona of Light",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "nature-domain|phb",
+        "name": "Nature Domain",
+        "shortName": "Nature",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Nature Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Charm Animals and Plants",
+            "level": 1
+          },
+          {
+            "name": "Dampen Elements",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Master of Nature",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "tempest-domain|phb",
+        "name": "Tempest Domain",
+        "shortName": "Tempest",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Tempest Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Destructive Wrath",
+            "level": 1
+          },
+          {
+            "name": "Thunderbolt Strike",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Stormborn",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "trickery-domain|phb",
+        "name": "Trickery Domain",
+        "shortName": "Trickery",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Trickery Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Invoke Duplicity",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Cloak of Shadows",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Improved Duplicity",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "war-domain|phb",
+        "name": "War Domain",
+        "shortName": "War",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "War Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Guided Strike",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: War God's Blessing",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Avatar of Battle",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "death-domain|dmg",
+        "name": "Death Domain",
+        "shortName": "Death",
+        "source": "DMG",
+        "subclassFeatures": [
+          {
+            "name": "Death Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Touch of Death",
+            "level": 1
+          },
+          {
+            "name": "Inescapable Destruction",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Improved Reaper",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "arcana-domain|scag",
+        "name": "Arcana Domain",
+        "shortName": "Arcana",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "Arcana Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Arcane Abjuration",
+            "level": 1
+          },
+          {
+            "name": "Spell Breaker",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Arcane Mastery",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "ambition-domain-(psa)|psa",
+        "name": "Ambition Domain (PSA)",
+        "shortName": "Ambition (PSA)",
+        "source": "PSA",
+        "subclassFeatures": [
+          {
+            "name": "Ambition Domain (PSA)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Invoke Duplicity",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Cloak of Shadows",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Improved Duplicity",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "knowledge-domain-(psa)|psa",
+        "name": "Knowledge Domain (PSA)",
+        "shortName": "Knowledge (PSA)",
+        "source": "PSA",
+        "subclassFeatures": [
+          {
+            "name": "Knowledge Domain (PSA)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Knowledge of the Ages",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Read Thoughts",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Visions of the Past",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "solidarity-domain-(psa)|psa",
+        "name": "Solidarity Domain (PSA)",
+        "shortName": "Solidarity (PSA)",
+        "source": "PSA",
+        "subclassFeatures": [
+          {
+            "name": "Solidarity Domain (PSA)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Preserve Life",
+            "level": 1
+          },
+          {
+            "name": "Oketra's Blessing",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Supreme Healing",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "strength-domain-(psa)|psa",
+        "name": "Strength Domain (PSA)",
+        "shortName": "Strength (PSA)",
+        "source": "PSA",
+        "subclassFeatures": [
+          {
+            "name": "Strength Domain (PSA)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Feat of Strength",
+            "level": 1
+          },
+          {
+            "name": "Rhonas's Blessing",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Avatar of Battle",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "zeal-domain-(psa)|psa",
+        "name": "Zeal Domain (PSA)",
+        "shortName": "Zeal (PSA)",
+        "source": "PSA",
+        "subclassFeatures": [
+          {
+            "name": "Zeal Domain (PSA)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Consuming Fervor",
+            "level": 1
+          },
+          {
+            "name": "Resounding Strike",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Blaze of Glory",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "forge-domain|xge",
+        "name": "Forge Domain",
+        "shortName": "Forge",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Forge Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Artisan's Blessing",
+            "level": 1
+          },
+          {
+            "name": "Soul of the Forge",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Saint of Forge and Fire",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "grave-domain|xge",
+        "name": "Grave Domain",
+        "shortName": "Grave",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Grave Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Path to the Grave",
+            "level": 1
+          },
+          {
+            "name": "Sentinel at Death's Door",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Keeper of Souls",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-domain|tce",
+        "name": "Order Domain",
+        "shortName": "Order",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Order Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Order's Demand",
+            "level": 1
+          },
+          {
+            "name": "Embodiment of the Law",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Order's Wrath",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "peace-domain|tce",
+        "name": "Peace Domain",
+        "shortName": "Peace",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Peace Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Balm of Peace",
+            "level": 1
+          },
+          {
+            "name": "Protective Bond",
+            "level": 1
+          },
+          {
+            "name": "Potent Spellcasting",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Expansive Bond",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "twilight-domain|tce",
+        "name": "Twilight Domain",
+        "shortName": "Twilight",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Twilight Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Twilight Sanctuary",
+            "level": 1
+          },
+          {
+            "name": "Steps of Night",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Blessed Strikes",
+            "level": 1
+          },
+          {
+            "name": "Twilight Shroud",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "blood-domain|tdcsr",
+        "name": "Blood Domain",
+        "shortName": "Blood",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Blood Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Crimson Bond",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Blood Puppet",
+            "level": 1
+          },
+          {
+            "name": "Sanguine Recall",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike",
+            "level": 1
+          },
+          {
+            "name": "Divine Strike (14th Level)",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Blood Puppet (17th Level)",
+            "level": 1
+          },
+          {
+            "name": "Vascular Corruption Aura",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "moon-domain|tdcsr",
+        "name": "Moon Domain",
+        "shortName": "Moon",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Moon Domain",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Blessing of the Full Moon",
+            "level": 1
+          },
+          {
+            "name": "Channel Divinity: Mind of Two Moons",
+            "level": 1
+          },
+          {
+            "name": "Empowered Cantrips",
+            "level": 1
+          },
+          {
+            "name": "Eclipse of Ill Omen",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "druid|phb": {
+    "key": "druid|phb",
+    "name": "Druid",
+    "source": "PHB",
+    "page": 64,
+    "hitDie": 8,
+    "savingThrows": [
+      "int",
+      "wis"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        {
+          "proficiency": "shield",
+          "full": "shields (druids will not wear armor or use shields made of metal)"
+        }
+      ],
+      "weapons": [
+        "{@item club|phb|clubs}",
+        "{@item dagger|phb|daggers}",
+        "{@item dart|phb|darts}",
+        "{@item javelin|phb|javelins}",
+        "{@item mace|phb|maces}",
+        "{@item quarterstaff|phb|quarterstaffs}",
+        "{@item scimitar|phb|scimitars}",
+        "{@item sickle|phb|sickles}",
+        "{@item sling|phb|slings}",
+        "{@item spear|phb|spears}"
+      ],
+      "tools": [
+        "{@item Herbalism kit|PHB}"
+      ],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "animal handling",
+              "insight",
+              "medicine",
+              "nature",
+              "perception",
+              "religion",
+              "survival"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Druidic",
+        "className": "Druid",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Druid",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Wild Shape",
+        "className": "Druid",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Wild Companion",
+        "className": "Druid",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Druid Circle",
+        "className": "Druid",
+        "level": 2,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Wild Shape Improvement",
+        "className": "Druid",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Druid",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Cantrip Versatility",
+        "className": "Druid",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Druid Circle feature",
+        "className": "Druid",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Wild Shape Improvement",
+        "className": "Druid",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Druid",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Druid Circle feature",
+        "className": "Druid",
+        "level": 10,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Druid",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Druid Circle feature",
+        "className": "Druid",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Druid",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Timeless Body",
+        "className": "Druid",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Beast Spells",
+        "className": "Druid",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Druid",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Archdruid",
+        "className": "Druid",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "casterType": "full",
+      "cantripsKnown": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnown": null,
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "wis": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          {
+            "proficiency": "shield",
+            "full": "shields (druids will not wear armor or use shields made of metal)"
+          }
+        ]
+      }
+    },
+    "subclassTitle": "Druid Circle",
+    "subclassLevel": 2,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "circle-of-the-land|phb",
+        "name": "Circle of the Land",
+        "shortName": "Land",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Circle of the Land",
+            "level": 1
+          },
+          {
+            "name": "Land's Stride",
+            "level": 1
+          },
+          {
+            "name": "Nature's Ward",
+            "level": 1
+          },
+          {
+            "name": "Nature's Sanctuary",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-the-moon|phb",
+        "name": "Circle of the Moon",
+        "shortName": "Moon",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Circle of the Moon",
+            "level": 1
+          },
+          {
+            "name": "Primal Strike",
+            "level": 1
+          },
+          {
+            "name": "Elemental Wild Shape",
+            "level": 1
+          },
+          {
+            "name": "Thousand Forms",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-dreams|xge",
+        "name": "Circle of Dreams",
+        "shortName": "Dreams",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Circle of Dreams",
+            "level": 1
+          },
+          {
+            "name": "Hearth of Moonlight and Shadow",
+            "level": 1
+          },
+          {
+            "name": "Hidden Paths",
+            "level": 1
+          },
+          {
+            "name": "Walker in Dreams",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-the-shepherd|xge",
+        "name": "Circle of the Shepherd",
+        "shortName": "Shepherd",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Circle of the Shepherd",
+            "level": 1
+          },
+          {
+            "name": "Mighty Summoner",
+            "level": 1
+          },
+          {
+            "name": "Guardian Spirit",
+            "level": 1
+          },
+          {
+            "name": "Faithful Summons",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-spores|tce",
+        "name": "Circle of Spores",
+        "shortName": "Spores",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Circle of Spores",
+            "level": 1
+          },
+          {
+            "name": "Fungal Infestation",
+            "level": 1
+          },
+          {
+            "name": "Spreading Spores",
+            "level": 1
+          },
+          {
+            "name": "Fungal Body",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-stars|tce",
+        "name": "Circle of Stars",
+        "shortName": "Stars",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Circle of Stars",
+            "level": 1
+          },
+          {
+            "name": "Cosmic Omen",
+            "level": 1
+          },
+          {
+            "name": "Twinkling Constellations",
+            "level": 1
+          },
+          {
+            "name": "Full of Stars",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-wildfire|tce",
+        "name": "Circle of Wildfire",
+        "shortName": "Wildfire",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Circle of Wildfire",
+            "level": 1
+          },
+          {
+            "name": "Enhanced Bond",
+            "level": 1
+          },
+          {
+            "name": "Cauterizing Flames",
+            "level": 1
+          },
+          {
+            "name": "Blazing Revival",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "circle-of-the-blighted|tdcsr",
+        "name": "Circle of the Blighted",
+        "shortName": "Blighted",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Circle of the Blighted",
+            "level": 1
+          },
+          {
+            "name": "Call of the Shadowseeds",
+            "level": 1
+          },
+          {
+            "name": "Defile Ground (10th Level)",
+            "level": 1
+          },
+          {
+            "name": "Defile Ground (14th Level)",
+            "level": 1
+          },
+          {
+            "name": "Foul Conjuration",
+            "level": 1
+          },
+          {
+            "name": "Incarnation of Corruption",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "fighter|phb": {
+    "key": "fighter|phb",
+    "name": "Fighter",
+    "source": "PHB",
+    "page": 70,
+    "hitDie": 10,
+    "savingThrows": [
+      "str",
+      "con"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "heavy",
+        "shield"
+      ],
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "animal handling",
+              "athletics",
+              "history",
+              "insight",
+              "intimidation",
+              "perception",
+              "survival"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Fighting Style",
+        "className": "Fighter",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Second Wind",
+        "className": "Fighter",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Action Surge",
+        "className": "Fighter",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Archetype",
+        "className": "Fighter",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Versatility",
+        "className": "Fighter",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Fighter",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Archetype feature",
+        "className": "Fighter",
+        "level": 7,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Indomitable",
+        "className": "Fighter",
+        "level": 9,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Archetype feature",
+        "className": "Fighter",
+        "level": 10,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Extra Attack (2)",
+        "className": "Fighter",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Indomitable (two uses)",
+        "className": "Fighter",
+        "level": 13,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Archetype feature",
+        "className": "Fighter",
+        "level": 15,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Action Surge (two uses)",
+        "className": "Fighter",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Indomitable (three uses)",
+        "className": "Fighter",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Archetype feature",
+        "className": "Fighter",
+        "level": 18,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Fighter",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Extra Attack (3)",
+        "className": "Fighter",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": {
+      "requirements": {
+        "or": [
+          {
+            "str": 13,
+            "dex": 13
+          }
+        ]
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ]
+      }
+    },
+    "subclassTitle": "Martial Archetype",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": true,
+    "subclasses": [
+      {
+        "key": "battle-master|phb",
+        "name": "Battle Master",
+        "shortName": "Battle Master",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Battle Master",
+            "level": 1
+          },
+          {
+            "name": "Additional Maneuvers",
+            "level": 1
+          },
+          {
+            "name": "Additional Superiority Die",
+            "level": 1
+          },
+          {
+            "name": "Know Your Enemy",
+            "level": 1
+          },
+          {
+            "name": "Additional Maneuvers",
+            "level": 1
+          },
+          {
+            "name": "Improved Combat Superiority (d10)",
+            "level": 1
+          },
+          {
+            "name": "Additional Maneuvers",
+            "level": 1
+          },
+          {
+            "name": "Additional Superiority Die",
+            "level": 1
+          },
+          {
+            "name": "Relentless",
+            "level": 1
+          },
+          {
+            "name": "Improved Combat Superiority (d12)",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "champion|phb",
+        "name": "Champion",
+        "shortName": "Champion",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Champion",
+            "level": 1
+          },
+          {
+            "name": "Remarkable Athlete",
+            "level": 1
+          },
+          {
+            "name": "Additional Fighting Style",
+            "level": 1
+          },
+          {
+            "name": "Superior Critical",
+            "level": 1
+          },
+          {
+            "name": "Survivor",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "eldritch-knight|phb",
+        "name": "Eldritch Knight",
+        "shortName": "Eldritch Knight",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Eldritch Knight",
+            "level": 1
+          },
+          {
+            "name": "War Magic",
+            "level": 1
+          },
+          {
+            "name": "Eldritch Strike",
+            "level": 1
+          },
+          {
+            "name": "Arcane Charge",
+            "level": 1
+          },
+          {
+            "name": "Improved War Magic",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "purple-dragon-knight-(banneret)|scag",
+        "name": "Purple Dragon Knight (Banneret)",
+        "shortName": "Purple Dragon Knight (Banneret)",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "Purple Dragon Knight (Banneret)",
+            "level": 1
+          },
+          {
+            "name": "Royal Envoy",
+            "level": 1
+          },
+          {
+            "name": "Inspiring Surge",
+            "level": 1
+          },
+          {
+            "name": "Bulwark",
+            "level": 1
+          },
+          {
+            "name": "Inspiring Surge",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "arcane-archer|xge",
+        "name": "Arcane Archer",
+        "shortName": "Arcane Archer",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Arcane Archer",
+            "level": 1
+          },
+          {
+            "name": "Magic Arrow",
+            "level": 1
+          },
+          {
+            "name": "Curving Shot",
+            "level": 1
+          },
+          {
+            "name": "Additional Arcane Shot Option",
+            "level": 1
+          },
+          {
+            "name": "Additional Arcane Shot Option",
+            "level": 1
+          },
+          {
+            "name": "Ever-Ready Shot",
+            "level": 1
+          },
+          {
+            "name": "Additional Arcane Shot Option",
+            "level": 1
+          },
+          {
+            "name": "Additional Arcane Shot Option",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "cavalier|xge",
+        "name": "Cavalier",
+        "shortName": "Cavalier",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Cavalier",
+            "level": 1
+          },
+          {
+            "name": "Warding Maneuver",
+            "level": 1
+          },
+          {
+            "name": "Hold the Line",
+            "level": 1
+          },
+          {
+            "name": "Ferocious Charger",
+            "level": 1
+          },
+          {
+            "name": "Vigilant Defender",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "samurai|xge",
+        "name": "Samurai",
+        "shortName": "Samurai",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Samurai",
+            "level": 1
+          },
+          {
+            "name": "Elegant Courtier",
+            "level": 1
+          },
+          {
+            "name": "Tireless Spirit",
+            "level": 1
+          },
+          {
+            "name": "Rapid Strike",
+            "level": 1
+          },
+          {
+            "name": "Strength before Death",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "echo-knight|egw",
+        "name": "Echo Knight",
+        "shortName": "Echo Knight",
+        "source": "EGW",
+        "subclassFeatures": [
+          {
+            "name": "Echo Knight",
+            "level": 1
+          },
+          {
+            "name": "Echo Avatar",
+            "level": 1
+          },
+          {
+            "name": "Shadow Martyr",
+            "level": 1
+          },
+          {
+            "name": "Reclaim Potential",
+            "level": 1
+          },
+          {
+            "name": "Legion of One",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "psi-warrior|tce",
+        "name": "Psi Warrior",
+        "shortName": "Psi Warrior",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Psi Warrior",
+            "level": 1
+          },
+          {
+            "name": "Telekinetic Adept",
+            "level": 1
+          },
+          {
+            "name": "Guarded Mind",
+            "level": 1
+          },
+          {
+            "name": "Bulwark of Force",
+            "level": 1
+          },
+          {
+            "name": "Telekinetic Master",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "rune-knight|tce",
+        "name": "Rune Knight",
+        "shortName": "Rune Knight",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Rune Knight",
+            "level": 1
+          },
+          {
+            "name": "Runic Shield",
+            "level": 1
+          },
+          {
+            "name": "Additional Rune Known",
+            "level": 1
+          },
+          {
+            "name": "Great Stature",
+            "level": 1
+          },
+          {
+            "name": "Additional Rune Known",
+            "level": 1
+          },
+          {
+            "name": "Master of Runes",
+            "level": 1
+          },
+          {
+            "name": "Additional Rune Known",
+            "level": 1
+          },
+          {
+            "name": "Runic Juggernaut",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "monk|phb": {
+    "key": "monk|phb",
+    "name": "Monk",
+    "source": "PHB",
+    "page": 76,
+    "hitDie": 8,
+    "savingThrows": [
+      "str",
+      "dex"
+    ],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [
+        "simple",
+        "{@item shortsword|phb|shortswords}"
+      ],
+      "tools": [
+        "any one type of {@item artisan's tools|PHB} or any one {@item musical instrument|PHB} of your choice"
+      ],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "athletics",
+              "history",
+              "insight",
+              "religion",
+              "stealth"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Unarmored Defense",
+        "className": "Monk",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Arts",
+        "className": "Monk",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Ki",
+        "className": "Monk",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Dedicated Weapon",
+        "className": "Monk",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Unarmored Movement",
+        "className": "Monk",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Deflect Missiles",
+        "className": "Monk",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Monastic Tradition",
+        "className": "Monk",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ki-Fueled Attack",
+        "className": "Monk",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Monk",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Slow Fall",
+        "className": "Monk",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Quickened Healing",
+        "className": "Monk",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Monk",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Stunning Strike",
+        "className": "Monk",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Focused Aim",
+        "className": "Monk",
+        "level": 5,
+        "source": "TCE"
+      },
+      {
+        "name": "Ki-Empowered Strikes",
+        "className": "Monk",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Monastic Tradition feature",
+        "className": "Monk",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Evasion",
+        "className": "Monk",
+        "level": 7,
+        "source": "PHB"
+      },
+      {
+        "name": "Stillness of Mind",
+        "className": "Monk",
+        "level": 7,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Monk",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Unarmored Movement improvement",
+        "className": "Monk",
+        "level": 9,
+        "source": "PHB"
+      },
+      {
+        "name": "Purity of Body",
+        "className": "Monk",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Monastic Tradition feature",
+        "className": "Monk",
+        "level": 11,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Monk",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Tongue of the Sun and Moon",
+        "className": "Monk",
+        "level": 13,
+        "source": "PHB"
+      },
+      {
+        "name": "Diamond Soul",
+        "className": "Monk",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Timeless Body",
+        "className": "Monk",
+        "level": 15,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Monk",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Monastic Tradition feature",
+        "className": "Monk",
+        "level": 17,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Empty Body",
+        "className": "Monk",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Monk",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Perfect Self",
+        "className": "Monk",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": {
+      "requirements": {
+        "dex": 13,
+        "wis": 13
+      },
+      "proficienciesGained": {
+        "weapons": [
+          "simple",
+          "{@item shortsword|phb|shortswords}"
+        ]
+      }
+    },
+    "subclassTitle": "Monastic Tradition",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "way-of-shadow|phb",
+        "name": "Way of Shadow",
+        "shortName": "Shadow",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Way of Shadow",
+            "level": 1
+          },
+          {
+            "name": "Shadow Step",
+            "level": 1
+          },
+          {
+            "name": "Cloak of Shadows",
+            "level": 1
+          },
+          {
+            "name": "Opportunist",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-four-elements|phb",
+        "name": "Way of the Four Elements",
+        "shortName": "Four Elements",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Four Elements",
+            "level": 1
+          },
+          {
+            "name": "Extra Elemental Discipline",
+            "level": 1
+          },
+          {
+            "name": "Extra Elemental Discipline",
+            "level": 1
+          },
+          {
+            "name": "Extra Elemental Discipline",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-open-hand|phb",
+        "name": "Way of the Open Hand",
+        "shortName": "Open Hand",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Open Hand",
+            "level": 1
+          },
+          {
+            "name": "Wholeness of Body",
+            "level": 1
+          },
+          {
+            "name": "Tranquility",
+            "level": 1
+          },
+          {
+            "name": "Quivering Palm",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-long-death|scag",
+        "name": "Way of the Long Death",
+        "shortName": "Long Death",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Long Death",
+            "level": 1
+          },
+          {
+            "name": "Hour of Reaping",
+            "level": 1
+          },
+          {
+            "name": "Mastery of Death",
+            "level": 1
+          },
+          {
+            "name": "Touch of the Long Death",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-drunken-master|xge",
+        "name": "Way of the Drunken Master",
+        "shortName": "Drunken Master",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Drunken Master",
+            "level": 1
+          },
+          {
+            "name": "Tipsy Sway",
+            "level": 1
+          },
+          {
+            "name": "Drunkard's Luck",
+            "level": 1
+          },
+          {
+            "name": "Intoxicated Frenzy",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-kensei|xge",
+        "name": "Way of the Kensei",
+        "shortName": "Kensei",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Kensei",
+            "level": 1
+          },
+          {
+            "name": "One with the Blade",
+            "level": 1
+          },
+          {
+            "name": "Sharpen the Blade",
+            "level": 1
+          },
+          {
+            "name": "Unerring Accuracy",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-sun-soul|xge",
+        "name": "Way of the Sun Soul",
+        "shortName": "Sun Soul",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Sun Soul",
+            "level": 1
+          },
+          {
+            "name": "Searing Arc Strike",
+            "level": 1
+          },
+          {
+            "name": "Searing Sunburst",
+            "level": 1
+          },
+          {
+            "name": "Sun Shield",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-mercy|tce",
+        "name": "Way of Mercy",
+        "shortName": "Mercy",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Way of Mercy",
+            "level": 1
+          },
+          {
+            "name": "Physician's Touch",
+            "level": 1
+          },
+          {
+            "name": "Flurry of Healing and Harm",
+            "level": 1
+          },
+          {
+            "name": "Hand of Ultimate Mercy",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-astral-self|tce",
+        "name": "Way of the Astral Self",
+        "shortName": "Astral Self",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Astral Self",
+            "level": 1
+          },
+          {
+            "name": "Visage of the Astral Self",
+            "level": 1
+          },
+          {
+            "name": "Body of the Astral Self",
+            "level": 1
+          },
+          {
+            "name": "Awakened Astral Self",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-ascendant-dragon|ftd",
+        "name": "Way of the Ascendant Dragon",
+        "shortName": "Ascendant Dragon",
+        "source": "FTD",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Ascendant Dragon",
+            "level": 1
+          },
+          {
+            "name": "Wings Unfurled",
+            "level": 1
+          },
+          {
+            "name": "Aspect of the Wyrm",
+            "level": 1
+          },
+          {
+            "name": "Ascendant Aspect",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "way-of-the-cobalt-soul|tdcsr",
+        "name": "Way of the Cobalt Soul",
+        "shortName": "Cobalt Soul",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Way of the Cobalt Soul",
+            "level": 1
+          },
+          {
+            "name": "Extort Truth",
+            "level": 1
+          },
+          {
+            "name": "Mystical Erudition",
+            "level": 1
+          },
+          {
+            "name": "Mystical Erudition (11th Level)",
+            "level": 1
+          },
+          {
+            "name": "Mystical Erudition (17th Level)",
+            "level": 1
+          },
+          {
+            "name": "Mind of Mercury",
+            "level": 1
+          },
+          {
+            "name": "Debilitating Barrage",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "mystic|uathemysticclass": {
+    "key": "mystic|uathemysticclass",
+    "name": "Mystic",
+    "source": "UATheMysticClass",
+    "page": 1,
+    "hitDie": 8,
+    "savingThrows": [
+      "int",
+      "wis"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light"
+      ],
+      "weapons": [
+        "simple"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "history",
+              "insight",
+              "medicine",
+              "nature",
+              "perception",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Psionics",
+        "className": "Mystic",
+        "level": 1,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Disciplines and Talents",
+        "className": "Mystic",
+        "level": 1,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Using a Discipline",
+        "className": "Mystic",
+        "level": 1,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Mystic Order",
+        "className": "Mystic",
+        "level": 1,
+        "source": "UATheMysticClass",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Mystical Recovery",
+        "className": "Mystic",
+        "level": 2,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Telepathy",
+        "className": "Mystic",
+        "level": 2,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Mystic Order feature",
+        "className": "Mystic",
+        "level": 3,
+        "source": "UATheMysticClass",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Mystic",
+        "level": 4,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Strength of Mind",
+        "className": "Mystic",
+        "level": 4,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Mystic Order feature",
+        "className": "Mystic",
+        "level": 6,
+        "source": "UATheMysticClass",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Mystic",
+        "level": 8,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Potent Psionics (1d8)",
+        "className": "Mystic",
+        "level": 8,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Consumptive Power",
+        "className": "Mystic",
+        "level": 10,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Mastery (1/Day)",
+        "className": "Mystic",
+        "level": 11,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Mystic",
+        "level": 12,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Mastery (2/Day)",
+        "className": "Mystic",
+        "level": 13,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Mystic Order feature",
+        "className": "Mystic",
+        "level": 14,
+        "source": "UATheMysticClass",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Potent Psionics (2d8)",
+        "className": "Mystic",
+        "level": 14,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Mastery (3/Day)",
+        "className": "Mystic",
+        "level": 15,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Mystic",
+        "level": 16,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Mastery (4/Day)",
+        "className": "Mystic",
+        "level": 17,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Mystic",
+        "level": 19,
+        "source": "UATheMysticClass"
+      },
+      {
+        "name": "Psionic Body",
+        "className": "Mystic",
+        "level": 20,
+        "source": "UATheMysticClass"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": null,
+    "subclassTitle": "Mystic Order",
+    "subclassLevel": 1,
+    "srd": false,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "order-of-the-avatar|uathemysticclass",
+        "name": "Order of the Avatar",
+        "shortName": "Avatar",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Avatar",
+            "level": 1
+          },
+          {
+            "name": "Avatar of Battle",
+            "level": 1
+          },
+          {
+            "name": "Avatar of Healing",
+            "level": 1
+          },
+          {
+            "name": "Avatar of Speed",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-the-awakened|uathemysticclass",
+        "name": "Order of the Awakened",
+        "shortName": "Awakened",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Awakened",
+            "level": 1
+          },
+          {
+            "name": "Psionic Investigation",
+            "level": 1
+          },
+          {
+            "name": "Psionic Surge",
+            "level": 1
+          },
+          {
+            "name": "Spectral Form",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-the-immortal|uathemysticclass",
+        "name": "Order of the Immortal",
+        "shortName": "Immortal",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Immortal",
+            "level": 1
+          },
+          {
+            "name": "Psionic Resilience",
+            "level": 1
+          },
+          {
+            "name": "Surge of Health",
+            "level": 1
+          },
+          {
+            "name": "Immortal Will",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-the-nomad|uathemysticclass",
+        "name": "Order of the Nomad",
+        "shortName": "Nomad",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Nomad",
+            "level": 1
+          },
+          {
+            "name": "Memory of One Thousand Steps",
+            "level": 1
+          },
+          {
+            "name": "Superior Teleportation",
+            "level": 1
+          },
+          {
+            "name": "Effortless Journey",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-the-soul-knife|uathemysticclass",
+        "name": "Order of the Soul Knife",
+        "shortName": "Soul Knife",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Soul Knife",
+            "level": 1
+          },
+          {
+            "name": "Hone the Blade",
+            "level": 1
+          },
+          {
+            "name": "Consumptive Knife",
+            "level": 1
+          },
+          {
+            "name": "Phantom Knife",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-the-wu-jen|uathemysticclass",
+        "name": "Order of the Wu Jen",
+        "shortName": "Wu Jen",
+        "source": "UATheMysticClass",
+        "subclassFeatures": [
+          {
+            "name": "Order of the Wu Jen",
+            "level": 1
+          },
+          {
+            "name": "Elemental Attunement",
+            "level": 1
+          },
+          {
+            "name": "Arcane Dabbler",
+            "level": 1
+          },
+          {
+            "name": "Elemental Mastery",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "paladin|phb": {
+    "key": "paladin|phb",
+    "name": "Paladin",
+    "source": "PHB",
+    "page": 82,
+    "hitDie": 10,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "heavy",
+        "shield"
+      ],
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "athletics",
+              "insight",
+              "intimidation",
+              "medicine",
+              "persuasion",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Divine Sense",
+        "className": "Paladin",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Lay on Hands",
+        "className": "Paladin",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Smite",
+        "className": "Paladin",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Fighting Style",
+        "className": "Paladin",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Paladin",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Divine Health",
+        "className": "Paladin",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Sacred Oath",
+        "className": "Paladin",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Paladin",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Versatility",
+        "className": "Paladin",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Paladin",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Aura of Protection",
+        "className": "Paladin",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Sacred Oath feature",
+        "className": "Paladin",
+        "level": 7,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Paladin",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Aura of Courage",
+        "className": "Paladin",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Improved Divine Smite",
+        "className": "Paladin",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Paladin",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Cleansing Touch",
+        "className": "Paladin",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Sacred Oath feature",
+        "className": "Paladin",
+        "level": 15,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Paladin",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Aura improvements",
+        "className": "Paladin",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Paladin",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Sacred Oath feature",
+        "className": "Paladin",
+        "level": 20,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterType": "1/2",
+      "cantripsKnown": null,
+      "spellsKnown": null,
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "str": 13,
+        "cha": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ]
+      }
+    },
+    "subclassTitle": "Sacred Oath",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "oath-of-devotion|phb",
+        "name": "Oath of Devotion",
+        "shortName": "Devotion",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Oath of Devotion",
+            "level": 1
+          },
+          {
+            "name": "Aura of Devotion",
+            "level": 1
+          },
+          {
+            "name": "Purity of Spirit",
+            "level": 1
+          },
+          {
+            "name": "Holy Nimbus",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-the-ancients|phb",
+        "name": "Oath of the Ancients",
+        "shortName": "Ancients",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Oath of the Ancients",
+            "level": 1
+          },
+          {
+            "name": "Aura of Warding",
+            "level": 1
+          },
+          {
+            "name": "Undying Sentinel",
+            "level": 1
+          },
+          {
+            "name": "Elder Champion",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-vengeance|phb",
+        "name": "Oath of Vengeance",
+        "shortName": "Vengeance",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Oath of Vengeance",
+            "level": 1
+          },
+          {
+            "name": "Relentless Avenger",
+            "level": 1
+          },
+          {
+            "name": "Soul of Vengeance",
+            "level": 1
+          },
+          {
+            "name": "Avenging Angel",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oathbreaker|dmg",
+        "name": "Oathbreaker",
+        "shortName": "Oathbreaker",
+        "source": "DMG",
+        "subclassFeatures": [
+          {
+            "name": "Oathbreaker",
+            "level": 1
+          },
+          {
+            "name": "Aura of Hate",
+            "level": 1
+          },
+          {
+            "name": "Supernatural Resistance",
+            "level": 1
+          },
+          {
+            "name": "Dread Lord",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-the-crown|scag",
+        "name": "Oath of the Crown",
+        "shortName": "Crown",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "Oath of the Crown",
+            "level": 1
+          },
+          {
+            "name": "Divine Allegiance",
+            "level": 1
+          },
+          {
+            "name": "Unyielding Spirit",
+            "level": 1
+          },
+          {
+            "name": "Exalted Champion",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-conquest|xge",
+        "name": "Oath of Conquest",
+        "shortName": "Conquest",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Oath of Conquest",
+            "level": 1
+          },
+          {
+            "name": "Aura of Conquest",
+            "level": 1
+          },
+          {
+            "name": "Scornful Rebuke",
+            "level": 1
+          },
+          {
+            "name": "Invincible Conqueror",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-redemption|xge",
+        "name": "Oath of Redemption",
+        "shortName": "Redemption",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Oath of Redemption",
+            "level": 1
+          },
+          {
+            "name": "Aura of the Guardian",
+            "level": 1
+          },
+          {
+            "name": "Protective Spirit",
+            "level": 1
+          },
+          {
+            "name": "Emissary of Redemption",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-glory|tce",
+        "name": "Oath of Glory",
+        "shortName": "Glory",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Oath of Glory",
+            "level": 1
+          },
+          {
+            "name": "Aura of Alacrity",
+            "level": 1
+          },
+          {
+            "name": "Glorious Defense",
+            "level": 1
+          },
+          {
+            "name": "Living Legend",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-the-watchers|tce",
+        "name": "Oath of the Watchers",
+        "shortName": "Watchers",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Oath of the Watchers",
+            "level": 1
+          },
+          {
+            "name": "Aura of the Sentinel",
+            "level": 1
+          },
+          {
+            "name": "Vigilant Rebuke",
+            "level": 1
+          },
+          {
+            "name": "Mortal Bulwark",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "oath-of-the-open-sea|tdcsr",
+        "name": "Oath of the Open Sea",
+        "shortName": "Open Sea",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Oath of the Open Sea",
+            "level": 1
+          },
+          {
+            "name": "Aura of Liberation",
+            "level": 1
+          },
+          {
+            "name": "Stormy Waters",
+            "level": 1
+          },
+          {
+            "name": "Aura of Liberation (18th Level)",
+            "level": 1
+          },
+          {
+            "name": "Mythic Swashbuckler",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ranger|phb": {
+    "key": "ranger|phb",
+    "name": "Ranger",
+    "source": "PHB",
+    "page": 89,
+    "hitDie": 10,
+    "savingThrows": [
+      "str",
+      "dex"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "animal handling",
+              "athletics",
+              "insight",
+              "investigation",
+              "nature",
+              "perception",
+              "stealth",
+              "survival"
+            ],
+            "count": 3
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Favored Enemy",
+        "className": "Ranger",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Favored Foe",
+        "className": "Ranger",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Natural Explorer",
+        "className": "Ranger",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Deft Explorer",
+        "className": "Ranger",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Fighting Style",
+        "className": "Ranger",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Ranger",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting Focus",
+        "className": "Ranger",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Ranger Archetype",
+        "className": "Ranger",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Primeval Awareness",
+        "className": "Ranger",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Primal Awareness",
+        "className": "Ranger",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Ranger",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Martial Versatility",
+        "className": "Ranger",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Ranger",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Favored Enemy and Natural Explorer improvements",
+        "className": "Ranger",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Deft Explorer Improvement",
+        "className": "Ranger",
+        "level": 6,
+        "source": "TCE"
+      },
+      {
+        "name": "Ranger Archetype feature",
+        "className": "Ranger",
+        "level": 7,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Ranger",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Land's Stride",
+        "className": "Ranger",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Hide in Plain Sight",
+        "className": "Ranger",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Nature's Veil",
+        "className": "Ranger",
+        "level": 10,
+        "source": "TCE"
+      },
+      {
+        "name": "Natural Explorer improvement",
+        "className": "Ranger",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Deft Explorer Improvement",
+        "className": "Ranger",
+        "level": 10,
+        "source": "TCE"
+      },
+      {
+        "name": "Ranger Archetype feature",
+        "className": "Ranger",
+        "level": 11,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Ranger",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Vanish",
+        "className": "Ranger",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Favored Enemy improvement",
+        "className": "Ranger",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Ranger Archetype feature",
+        "className": "Ranger",
+        "level": 15,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Ranger",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Feral Senses",
+        "className": "Ranger",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Ranger",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Foe Slayer",
+        "className": "Ranger",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "casterType": "1/2",
+      "cantripsKnown": null,
+      "spellsKnown": [
+        0,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11
+      ],
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "dex": 13,
+        "wis": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "animal handling",
+                "athletics",
+                "insight",
+                "investigation",
+                "nature",
+                "perception",
+                "stealth",
+                "survival"
+              ],
+              "count": 1
+            }
+          }
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ]
+      }
+    },
+    "subclassTitle": "Ranger Archetype",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "beast-master|phb",
+        "name": "Beast Master",
+        "shortName": "Beast Master",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Beast Master",
+            "level": 1
+          },
+          {
+            "name": "Exceptional Training",
+            "level": 1
+          },
+          {
+            "name": "Bestial Fury",
+            "level": 1
+          },
+          {
+            "name": "Share Spells",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "hunter|phb",
+        "name": "Hunter",
+        "shortName": "Hunter",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Hunter",
+            "level": 1
+          },
+          {
+            "name": "Defensive Tactics",
+            "level": 1
+          },
+          {
+            "name": "Multiattack",
+            "level": 1
+          },
+          {
+            "name": "Superior Hunter's Defense",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "gloom-stalker|xge",
+        "name": "Gloom Stalker",
+        "shortName": "Gloom Stalker",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Gloom Stalker",
+            "level": 1
+          },
+          {
+            "name": "Iron Mind",
+            "level": 1
+          },
+          {
+            "name": "Stalker's Flurry",
+            "level": 1
+          },
+          {
+            "name": "Shadowy Dodge",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "horizon-walker|xge",
+        "name": "Horizon Walker",
+        "shortName": "Horizon Walker",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Horizon Walker",
+            "level": 1
+          },
+          {
+            "name": "Ethereal Step",
+            "level": 1
+          },
+          {
+            "name": "Distant Strike",
+            "level": 1
+          },
+          {
+            "name": "Spectral Defense",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "monster-slayer|xge",
+        "name": "Monster Slayer",
+        "shortName": "Monster Slayer",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Monster Slayer",
+            "level": 1
+          },
+          {
+            "name": "Supernatural Defense",
+            "level": 1
+          },
+          {
+            "name": "Magic-User's Nemesis",
+            "level": 1
+          },
+          {
+            "name": "Slayer's Counter",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "fey-wanderer|tce",
+        "name": "Fey Wanderer",
+        "shortName": "Fey Wanderer",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Fey Wanderer",
+            "level": 1
+          },
+          {
+            "name": "Beguiling Twist",
+            "level": 1
+          },
+          {
+            "name": "Fey Reinforcements",
+            "level": 1
+          },
+          {
+            "name": "Misty Wanderer",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "swarmkeeper|tce",
+        "name": "Swarmkeeper",
+        "shortName": "Swarmkeeper",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Swarmkeeper",
+            "level": 1
+          },
+          {
+            "name": "Writhing Tide",
+            "level": 1
+          },
+          {
+            "name": "Mighty Swarm",
+            "level": 1
+          },
+          {
+            "name": "Swarming Dispersal",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "drakewarden|ftd",
+        "name": "Drakewarden",
+        "shortName": "Drakewarden",
+        "source": "FTD",
+        "subclassFeatures": [
+          {
+            "name": "Drakewarden",
+            "level": 1
+          },
+          {
+            "name": "Bond of Fang and Scale",
+            "level": 1
+          },
+          {
+            "name": "Drake's Breath",
+            "level": 1
+          },
+          {
+            "name": "Perfected Bond",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "rogue|phb": {
+    "key": "rogue|phb",
+    "name": "Rogue",
+    "source": "PHB",
+    "page": 94,
+    "hitDie": 8,
+    "savingThrows": [
+      "dex",
+      "int"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light"
+      ],
+      "weapons": [
+        "simple",
+        "{@item hand crossbow|phb|hand crossbows}",
+        "{@item longsword|phb|longswords}",
+        "{@item rapier|phb|rapiers}",
+        "{@item shortsword|phb|shortswords}"
+      ],
+      "tools": [
+        "{@item thieves' tools|PHB}"
+      ],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "athletics",
+              "deception",
+              "insight",
+              "intimidation",
+              "investigation",
+              "perception",
+              "performance",
+              "persuasion",
+              "sleight of hand",
+              "stealth"
+            ],
+            "count": 4
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Expertise",
+        "className": "Rogue",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Sneak Attack",
+        "className": "Rogue",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Thieves' Cant",
+        "className": "Rogue",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Cunning Action",
+        "className": "Rogue",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Roguish Archetype",
+        "className": "Rogue",
+        "level": 3,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Steady Aim",
+        "className": "Rogue",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Uncanny Dodge",
+        "className": "Rogue",
+        "level": 5,
+        "source": "PHB"
+      },
+      {
+        "name": "Expertise",
+        "className": "Rogue",
+        "level": 6,
+        "source": "PHB"
+      },
+      {
+        "name": "Evasion",
+        "className": "Rogue",
+        "level": 7,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Roguish Archetype feature",
+        "className": "Rogue",
+        "level": 9,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Reliable Talent",
+        "className": "Rogue",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Roguish Archetype feature",
+        "className": "Rogue",
+        "level": 13,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Blindsense",
+        "className": "Rogue",
+        "level": 14,
+        "source": "PHB"
+      },
+      {
+        "name": "Slippery Mind",
+        "className": "Rogue",
+        "level": 15,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Roguish Archetype feature",
+        "className": "Rogue",
+        "level": 17,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Elusive",
+        "className": "Rogue",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Rogue",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Stroke of Luck",
+        "className": "Rogue",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": {
+      "requirements": {
+        "dex": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "athletics",
+                "deception",
+                "insight",
+                "intimidation",
+                "investigation",
+                "perception",
+                "performance",
+                "persuasion",
+                "sleight of hand",
+                "stealth"
+              ],
+              "count": 1
+            }
+          }
+        ],
+        "tools": [
+          "{@item thieves' tools|PHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "thieves' tools": true
+          }
+        ]
+      }
+    },
+    "subclassTitle": "Roguish Archetype",
+    "subclassLevel": 3,
+    "srd": true,
+    "basicRules": true,
+    "subclasses": [
+      {
+        "key": "arcane-trickster|phb",
+        "name": "Arcane Trickster",
+        "shortName": "Arcane Trickster",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Arcane Trickster",
+            "level": 1
+          },
+          {
+            "name": "Magical Ambush",
+            "level": 1
+          },
+          {
+            "name": "Versatile Trickster",
+            "level": 1
+          },
+          {
+            "name": "Spell Thief",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "assassin|phb",
+        "name": "Assassin",
+        "shortName": "Assassin",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Assassin",
+            "level": 1
+          },
+          {
+            "name": "Infiltration Expertise",
+            "level": 1
+          },
+          {
+            "name": "Impostor",
+            "level": 1
+          },
+          {
+            "name": "Death Strike",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "thief|phb",
+        "name": "Thief",
+        "shortName": "Thief",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Thief",
+            "level": 1
+          },
+          {
+            "name": "Supreme Sneak",
+            "level": 1
+          },
+          {
+            "name": "Use Magic Device",
+            "level": 1
+          },
+          {
+            "name": "Thief's Reflexes",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "inquisitive|xge",
+        "name": "Inquisitive",
+        "shortName": "Inquisitive",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Inquisitive",
+            "level": 1
+          },
+          {
+            "name": "Steady Eye",
+            "level": 1
+          },
+          {
+            "name": "Unerring Eye",
+            "level": 1
+          },
+          {
+            "name": "Eye for Weakness",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "mastermind|xge",
+        "name": "Mastermind",
+        "shortName": "Mastermind",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Mastermind",
+            "level": 1
+          },
+          {
+            "name": "Insightful Manipulator",
+            "level": 1
+          },
+          {
+            "name": "Misdirection",
+            "level": 1
+          },
+          {
+            "name": "Soul of Deceit",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "scout|xge",
+        "name": "Scout",
+        "shortName": "Scout",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Scout",
+            "level": 1
+          },
+          {
+            "name": "Superior Mobility",
+            "level": 1
+          },
+          {
+            "name": "Ambush Master",
+            "level": 1
+          },
+          {
+            "name": "Sudden Strike",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "swashbuckler|xge",
+        "name": "Swashbuckler",
+        "shortName": "Swashbuckler",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Swashbuckler",
+            "level": 1
+          },
+          {
+            "name": "Panache",
+            "level": 1
+          },
+          {
+            "name": "Elegant Maneuver",
+            "level": 1
+          },
+          {
+            "name": "Master Duelist",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "phantom|tce",
+        "name": "Phantom",
+        "shortName": "Phantom",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Phantom",
+            "level": 1
+          },
+          {
+            "name": "Tokens of the Departed",
+            "level": 1
+          },
+          {
+            "name": "Ghost Walk",
+            "level": 1
+          },
+          {
+            "name": "Death's Friend",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "soulknife|tce",
+        "name": "Soulknife",
+        "shortName": "Soulknife",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Soulknife",
+            "level": 1
+          },
+          {
+            "name": "Soul Blades",
+            "level": 1
+          },
+          {
+            "name": "Psychic Veil",
+            "level": 1
+          },
+          {
+            "name": "Rend Mind",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "expert-sidekick|tce": {
+    "key": "expert-sidekick|tce",
+    "name": "Expert Sidekick",
+    "source": "TCE",
+    "page": 142,
+    "hitDie": 8,
+    "savingThrows": [],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [],
+      "tools": [],
+      "skills": []
+    },
+    "classFeatures": [
+      {
+        "name": "Sidekick Class",
+        "className": "Expert Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Bonus Proficiencies",
+        "className": "Expert Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Helpful",
+        "className": "Expert Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Cunning Action",
+        "className": "Expert Sidekick",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Expertise",
+        "className": "Expert Sidekick",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Coordinated Strike",
+        "className": "Expert Sidekick",
+        "level": 6,
+        "source": "TCE"
+      },
+      {
+        "name": "Evasion",
+        "className": "Expert Sidekick",
+        "level": 7,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 8,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 10,
+        "source": "TCE"
+      },
+      {
+        "name": "Inspiring Help",
+        "className": "Expert Sidekick",
+        "level": 11,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 12,
+        "source": "TCE"
+      },
+      {
+        "name": "Reliable Talent",
+        "className": "Expert Sidekick",
+        "level": 14,
+        "source": "TCE"
+      },
+      {
+        "name": "Expertise",
+        "className": "Expert Sidekick",
+        "level": 15,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 16,
+        "source": "TCE"
+      },
+      {
+        "name": "Sharp Mind",
+        "className": "Expert Sidekick",
+        "level": 18,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Expert Sidekick",
+        "level": 19,
+        "source": "TCE"
+      },
+      {
+        "name": "Inspiring Help Improvement",
+        "className": "Expert Sidekick",
+        "level": 20,
+        "source": "TCE"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": null,
+    "subclassTitle": "Subclass",
+    "subclassLevel": 3,
+    "srd": false,
+    "basicRules": false
+  },
+  "spellcaster-sidekick|tce": {
+    "key": "spellcaster-sidekick|tce",
+    "name": "Spellcaster Sidekick",
+    "source": "TCE",
+    "page": 144,
+    "hitDie": 8,
+    "savingThrows": [],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [],
+      "tools": [],
+      "skills": []
+    },
+    "classFeatures": [
+      {
+        "name": "Sidekick Class",
+        "className": "Spellcaster Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Bonus Proficiencies",
+        "className": "Spellcaster Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Spellcaster Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Spellcaster Sidekick",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Potent Cantrips",
+        "className": "Spellcaster Sidekick",
+        "level": 6,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Spellcaster Sidekick",
+        "level": 8,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Spellcaster Sidekick",
+        "level": 12,
+        "source": "TCE"
+      },
+      {
+        "name": "Empowered Spells",
+        "className": "Spellcaster Sidekick",
+        "level": 14,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Spellcaster Sidekick",
+        "level": 16,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Spellcaster Sidekick",
+        "level": 18,
+        "source": "TCE"
+      },
+      {
+        "name": "Focused Casting",
+        "className": "Spellcaster Sidekick",
+        "level": 20,
+        "source": "TCE"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": null,
+    "subclassTitle": "Subclass",
+    "subclassLevel": 3,
+    "srd": false,
+    "basicRules": false
+  },
+  "warrior-sidekick|tce": {
+    "key": "warrior-sidekick|tce",
+    "name": "Warrior Sidekick",
+    "source": "TCE",
+    "page": 146,
+    "hitDie": 8,
+    "savingThrows": [],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [],
+      "tools": [],
+      "skills": []
+    },
+    "classFeatures": [
+      {
+        "name": "Sidekick Class",
+        "className": "Warrior Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Bonus Proficiencies",
+        "className": "Warrior Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Martial Role",
+        "className": "Warrior Sidekick",
+        "level": 1,
+        "source": "TCE"
+      },
+      {
+        "name": "Second Wind",
+        "className": "Warrior Sidekick",
+        "level": 2,
+        "source": "TCE"
+      },
+      {
+        "name": "Improved Critical",
+        "className": "Warrior Sidekick",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack",
+        "className": "Warrior Sidekick",
+        "level": 6,
+        "source": "TCE"
+      },
+      {
+        "name": "Battle Readiness",
+        "className": "Warrior Sidekick",
+        "level": 7,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 8,
+        "source": "TCE"
+      },
+      {
+        "name": "Improved Defense",
+        "className": "Warrior Sidekick",
+        "level": 10,
+        "source": "TCE"
+      },
+      {
+        "name": "Indomitable",
+        "className": "Warrior Sidekick",
+        "level": 11,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 12,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 14,
+        "source": "TCE"
+      },
+      {
+        "name": "Extra Attack Improvement",
+        "className": "Warrior Sidekick",
+        "level": 15,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 16,
+        "source": "TCE"
+      },
+      {
+        "name": "Indomitable Improvement",
+        "className": "Warrior Sidekick",
+        "level": 18,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warrior Sidekick",
+        "level": 19,
+        "source": "TCE"
+      },
+      {
+        "name": "Second Wind Improvement",
+        "className": "Warrior Sidekick",
+        "level": 20,
+        "source": "TCE"
+      }
+    ],
+    "spellcasting": null,
+    "multiclassing": null,
+    "subclassTitle": "Subclass",
+    "subclassLevel": 3,
+    "srd": false,
+    "basicRules": false
+  },
+  "sorcerer|phb": {
+    "key": "sorcerer|phb",
+    "name": "Sorcerer",
+    "source": "PHB",
+    "page": 99,
+    "hitDie": 6,
+    "savingThrows": [
+      "con",
+      "cha"
+    ],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [
+        "{@item dagger|phb|daggers}",
+        "{@item dart|phb|darts}",
+        "{@item sling|phb|slings}",
+        "{@item quarterstaff|phb|quarterstaffs}",
+        "{@item light crossbow|phb|light crossbows}"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "deception",
+              "insight",
+              "intimidation",
+              "persuasion",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Spellcasting",
+        "className": "Sorcerer",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerous Origin",
+        "className": "Sorcerer",
+        "level": 1,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Font of Magic",
+        "className": "Sorcerer",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Metamagic",
+        "className": "Sorcerer",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Metamagic Options",
+        "className": "Sorcerer",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Sorcerer",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerous Versatility",
+        "className": "Sorcerer",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Magical Guidance",
+        "className": "Sorcerer",
+        "level": 5,
+        "source": "TCE"
+      },
+      {
+        "name": "Sorcerous Origin feature",
+        "className": "Sorcerer",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Sorcerer",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Metamagic",
+        "className": "Sorcerer",
+        "level": 10,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Sorcerer",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerous Origin feature",
+        "className": "Sorcerer",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Sorcerer",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Metamagic",
+        "className": "Sorcerer",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerous Origin feature",
+        "className": "Sorcerer",
+        "level": 18,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Sorcerer",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerous Restoration",
+        "className": "Sorcerer",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterType": "full",
+      "cantripsKnown": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "spellsKnown": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15,
+        15,
+        15
+      ],
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "cha": 13
+      },
+      "proficienciesGained": null
+    },
+    "subclassTitle": "Sorcerous Origin",
+    "subclassLevel": 1,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "draconic-bloodline|phb",
+        "name": "Draconic Bloodline",
+        "shortName": "Draconic",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Draconic Bloodline",
+            "level": 1
+          },
+          {
+            "name": "Elemental Affinity",
+            "level": 1
+          },
+          {
+            "name": "Dragon Wings",
+            "level": 1
+          },
+          {
+            "name": "Draconic Presence",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "wild-magic|phb",
+        "name": "Wild Magic",
+        "shortName": "Wild",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "Wild Magic",
+            "level": 1
+          },
+          {
+            "name": "Bend Luck",
+            "level": 1
+          },
+          {
+            "name": "Controlled Chaos",
+            "level": 1
+          },
+          {
+            "name": "Spell Bombardment",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "pyromancer-(psk)|psk",
+        "name": "Pyromancer (PSK)",
+        "shortName": "Pyromancer (PSK)",
+        "source": "PSK",
+        "subclassFeatures": [
+          {
+            "name": "Pyromancer (PSK)",
+            "level": 1
+          },
+          {
+            "name": "Fire in the Veins",
+            "level": 1
+          },
+          {
+            "name": "Pyromancer's Fury",
+            "level": 1
+          },
+          {
+            "name": "Fiery Soul",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "divine-soul|xge",
+        "name": "Divine Soul",
+        "shortName": "Divine Soul",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Divine Soul",
+            "level": 1
+          },
+          {
+            "name": "Empowered Healing",
+            "level": 1
+          },
+          {
+            "name": "Otherworldly Wings",
+            "level": 1
+          },
+          {
+            "name": "Unearthly Recovery",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "shadow-magic|xge",
+        "name": "Shadow Magic",
+        "shortName": "Shadow",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Shadow Magic",
+            "level": 1
+          },
+          {
+            "name": "Hound of Ill Omen",
+            "level": 1
+          },
+          {
+            "name": "Shadow Walk",
+            "level": 1
+          },
+          {
+            "name": "Umbral Form",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "storm-sorcery|xge",
+        "name": "Storm Sorcery",
+        "shortName": "Storm",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "Storm Sorcery",
+            "level": 1
+          },
+          {
+            "name": "Heart of the Storm",
+            "level": 1
+          },
+          {
+            "name": "Storm Guide",
+            "level": 1
+          },
+          {
+            "name": "Storm's Fury",
+            "level": 1
+          },
+          {
+            "name": "Wind Soul",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "aberrant-mind|tce",
+        "name": "Aberrant Mind",
+        "shortName": "Aberrant Mind",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Aberrant Mind",
+            "level": 1
+          },
+          {
+            "name": "Psionic Sorcery",
+            "level": 1
+          },
+          {
+            "name": "Psychic Defenses",
+            "level": 1
+          },
+          {
+            "name": "Revelation in Flesh",
+            "level": 1
+          },
+          {
+            "name": "Warping Implosion",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "clockwork-soul|tce",
+        "name": "Clockwork Soul",
+        "shortName": "Clockwork Soul",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Clockwork Soul",
+            "level": 1
+          },
+          {
+            "name": "Bastion of Law",
+            "level": 1
+          },
+          {
+            "name": "Trance of Order",
+            "level": 1
+          },
+          {
+            "name": "Clockwork Cavalcade",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "runechild|tdcsr",
+        "name": "Runechild",
+        "shortName": "Runechild",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Runechild",
+            "level": 1
+          },
+          {
+            "name": "Glyph of Aegis (6th Level)",
+            "level": 1
+          },
+          {
+            "name": "Sigilic Augmentation",
+            "level": 1
+          },
+          {
+            "name": "Manifest Inscriptions",
+            "level": 1
+          },
+          {
+            "name": "Glyph of Aegis (14th Level)",
+            "level": 1
+          },
+          {
+            "name": "Runic Torrent",
+            "level": 1
+          },
+          {
+            "name": "Arcane Exemplar",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "lunar-sorcery|dsotdq",
+        "name": "Lunar Sorcery",
+        "shortName": "Lunar",
+        "source": "DSotDQ",
+        "subclassFeatures": [
+          {
+            "name": "Lunar Sorcery",
+            "level": 1
+          },
+          {
+            "name": "Lunar Boons",
+            "level": 1
+          },
+          {
+            "name": "Waxing and Waning",
+            "level": 1
+          },
+          {
+            "name": "Lunar Empowerment",
+            "level": 1
+          },
+          {
+            "name": "Lunar Phenomenon",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "warlock|phb": {
+    "key": "warlock|phb",
+    "name": "Warlock",
+    "source": "PHB",
+    "page": 105,
+    "hitDie": 8,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "startingProficiencies": {
+      "armor": [
+        "light"
+      ],
+      "weapons": [
+        "simple"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "deception",
+              "history",
+              "intimidation",
+              "investigation",
+              "nature",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Pact Magic",
+        "className": "Warlock",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Otherworldly Patron",
+        "className": "Warlock",
+        "level": 1,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Eldritch Invocations",
+        "className": "Warlock",
+        "level": 2,
+        "source": "PHB"
+      },
+      {
+        "name": "Pact Boon",
+        "className": "Warlock",
+        "level": 3,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warlock",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Eldritch Versatility",
+        "className": "Warlock",
+        "level": 4,
+        "source": "TCE"
+      },
+      {
+        "name": "Otherworldly Patron feature",
+        "className": "Warlock",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warlock",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Otherworldly Patron feature",
+        "className": "Warlock",
+        "level": 10,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Mystic Arcanum (6th level)",
+        "className": "Warlock",
+        "level": 11,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warlock",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Mystic Arcanum (7th level)",
+        "className": "Warlock",
+        "level": 13,
+        "source": "PHB"
+      },
+      {
+        "name": "Otherworldly Patron feature",
+        "className": "Warlock",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Mystic Arcanum (8th level)",
+        "className": "Warlock",
+        "level": 15,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warlock",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Mystic Arcanum (9th level)",
+        "className": "Warlock",
+        "level": 17,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Warlock",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Eldritch Master",
+        "className": "Warlock",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterType": "pact",
+      "cantripsKnown": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnown": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15
+      ],
+      "spellsKnownProgressionFixedByLevel": {
+        "11": {
+          "6": 1
+        },
+        "13": {
+          "7": 1
+        },
+        "15": {
+          "8": 1
+        },
+        "17": {
+          "9": 1
+        }
+      }
+    },
+    "multiclassing": {
+      "requirements": {
+        "cha": 13
+      },
+      "proficienciesGained": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple"
+        ]
+      }
+    },
+    "subclassTitle": "Otherworldly Patron",
+    "subclassLevel": 1,
+    "srd": true,
+    "basicRules": false,
+    "subclasses": [
+      {
+        "key": "the-archfey|phb",
+        "name": "The Archfey",
+        "shortName": "Archfey",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "The Archfey",
+            "level": 1
+          },
+          {
+            "name": "Misty Escape",
+            "level": 1
+          },
+          {
+            "name": "Beguiling Defenses",
+            "level": 1
+          },
+          {
+            "name": "Dark Delirium",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-fiend|phb",
+        "name": "The Fiend",
+        "shortName": "Fiend",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "The Fiend",
+            "level": 1
+          },
+          {
+            "name": "Dark One's Own Luck",
+            "level": 1
+          },
+          {
+            "name": "Fiendish Resilience",
+            "level": 1
+          },
+          {
+            "name": "Hurl Through Hell",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-great-old-one|phb",
+        "name": "The Great Old One",
+        "shortName": "Great Old One",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "The Great Old One",
+            "level": 1
+          },
+          {
+            "name": "Entropic Ward",
+            "level": 1
+          },
+          {
+            "name": "Thought Shield",
+            "level": 1
+          },
+          {
+            "name": "Create Thrall",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-undying|scag",
+        "name": "The Undying",
+        "shortName": "Undying",
+        "source": "SCAG",
+        "subclassFeatures": [
+          {
+            "name": "The Undying",
+            "level": 1
+          },
+          {
+            "name": "Defy Death",
+            "level": 1
+          },
+          {
+            "name": "Undying Nature",
+            "level": 1
+          },
+          {
+            "name": "Indestructible Life",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-celestial|xge",
+        "name": "The Celestial",
+        "shortName": "Celestial",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "The Celestial",
+            "level": 1
+          },
+          {
+            "name": "Radiant Soul",
+            "level": 1
+          },
+          {
+            "name": "Celestial Resilience",
+            "level": 1
+          },
+          {
+            "name": "Searing Vengeance",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-hexblade|xge",
+        "name": "The Hexblade",
+        "shortName": "Hexblade",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "The Hexblade",
+            "level": 1
+          },
+          {
+            "name": "Accursed Specter",
+            "level": 1
+          },
+          {
+            "name": "Armor of Hexes",
+            "level": 1
+          },
+          {
+            "name": "Master of Hexes",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-fathomless|tce",
+        "name": "The Fathomless",
+        "shortName": "Fathomless",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "The Fathomless",
+            "level": 1
+          },
+          {
+            "name": "Oceanic Soul",
+            "level": 1
+          },
+          {
+            "name": "Guardian Coil",
+            "level": 1
+          },
+          {
+            "name": "Grasping Tentacles",
+            "level": 1
+          },
+          {
+            "name": "Fathomless Plunge",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-genie|tce",
+        "name": "The Genie",
+        "shortName": "Genie",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "The Genie",
+            "level": 1
+          },
+          {
+            "name": "Elemental Gift",
+            "level": 1
+          },
+          {
+            "name": "Sanctuary Vessel",
+            "level": 1
+          },
+          {
+            "name": "Limited Wish",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "the-undead|vrgr",
+        "name": "The Undead",
+        "shortName": "Undead",
+        "source": "VRGR",
+        "subclassFeatures": [
+          {
+            "name": "The Undead",
+            "level": 1
+          },
+          {
+            "name": "Grave Touched",
+            "level": 1
+          },
+          {
+            "name": "Necrotic Husk",
+            "level": 1
+          },
+          {
+            "name": "Spirit Projection",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  },
+  "wizard|phb": {
+    "key": "wizard|phb",
+    "name": "Wizard",
+    "source": "PHB",
+    "page": 112,
+    "hitDie": 6,
+    "savingThrows": [
+      "int",
+      "wis"
+    ],
+    "startingProficiencies": {
+      "armor": [],
+      "weapons": [
+        "{@item dagger|phb|daggers}",
+        "{@item dart|phb|darts}",
+        "{@item sling|phb|slings}",
+        "{@item quarterstaff|phb|quarterstaffs}",
+        "{@item light crossbow|phb|light crossbows}"
+      ],
+      "tools": [],
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "history",
+              "insight",
+              "investigation",
+              "medicine",
+              "religion"
+            ],
+            "count": 2
+          }
+        }
+      ]
+    },
+    "classFeatures": [
+      {
+        "name": "Arcane Recovery",
+        "className": "Wizard",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Spellcasting",
+        "className": "Wizard",
+        "level": 1,
+        "source": "PHB"
+      },
+      {
+        "name": "Arcane Tradition",
+        "className": "Wizard",
+        "level": 2,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Cantrip Formulas",
+        "className": "Wizard",
+        "level": 3,
+        "source": "TCE"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Wizard",
+        "level": 4,
+        "source": "PHB"
+      },
+      {
+        "name": "Arcane Tradition feature",
+        "className": "Wizard",
+        "level": 6,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Wizard",
+        "level": 8,
+        "source": "PHB"
+      },
+      {
+        "name": "Arcane Tradition feature",
+        "className": "Wizard",
+        "level": 10,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Wizard",
+        "level": 12,
+        "source": "PHB"
+      },
+      {
+        "name": "Arcane Tradition feature",
+        "className": "Wizard",
+        "level": 14,
+        "source": "PHB",
+        "gainSubclassFeature": true
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Wizard",
+        "level": 16,
+        "source": "PHB"
+      },
+      {
+        "name": "Spell Mastery",
+        "className": "Wizard",
+        "level": 18,
+        "source": "PHB"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "className": "Wizard",
+        "level": 19,
+        "source": "PHB"
+      },
+      {
+        "name": "Signature Spells",
+        "className": "Wizard",
+        "level": 20,
+        "source": "PHB"
+      }
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "casterType": "full",
+      "cantripsKnown": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellsKnown": null,
+      "spellsKnownProgressionFixedByLevel": null
+    },
+    "multiclassing": {
+      "requirements": {
+        "int": 13
+      },
+      "proficienciesGained": null
+    },
+    "subclassTitle": "Arcane Tradition",
+    "subclassLevel": 2,
+    "srd": true,
+    "basicRules": true,
+    "subclasses": [
+      {
+        "key": "school-of-abjuration|phb",
+        "name": "School of Abjuration",
+        "shortName": "Abjuration",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Abjuration",
+            "level": 1
+          },
+          {
+            "name": "Projected Ward",
+            "level": 1
+          },
+          {
+            "name": "Improved Abjuration",
+            "level": 1
+          },
+          {
+            "name": "Spell Resistance",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-conjuration|phb",
+        "name": "School of Conjuration",
+        "shortName": "Conjuration",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Conjuration",
+            "level": 1
+          },
+          {
+            "name": "Benign Transposition",
+            "level": 1
+          },
+          {
+            "name": "Focused Conjuration",
+            "level": 1
+          },
+          {
+            "name": "Durable Summons",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-divination|phb",
+        "name": "School of Divination",
+        "shortName": "Divination",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Divination",
+            "level": 1
+          },
+          {
+            "name": "Expert Divination",
+            "level": 1
+          },
+          {
+            "name": "The Third Eye",
+            "level": 1
+          },
+          {
+            "name": "Greater Portent",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-enchantment|phb",
+        "name": "School of Enchantment",
+        "shortName": "Enchantment",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Enchantment",
+            "level": 1
+          },
+          {
+            "name": "Instinctive Charm",
+            "level": 1
+          },
+          {
+            "name": "Split Enchantment",
+            "level": 1
+          },
+          {
+            "name": "Alter Memories",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-evocation|phb",
+        "name": "School of Evocation",
+        "shortName": "Evocation",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Evocation",
+            "level": 1
+          },
+          {
+            "name": "Potent Cantrip",
+            "level": 1
+          },
+          {
+            "name": "Empowered Evocation",
+            "level": 1
+          },
+          {
+            "name": "Overchannel",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-illusion|phb",
+        "name": "School of Illusion",
+        "shortName": "Illusion",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Illusion",
+            "level": 1
+          },
+          {
+            "name": "Malleable Illusions",
+            "level": 1
+          },
+          {
+            "name": "Illusory Self",
+            "level": 1
+          },
+          {
+            "name": "Illusory Reality",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-necromancy|phb",
+        "name": "School of Necromancy",
+        "shortName": "Necromancy",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Necromancy",
+            "level": 1
+          },
+          {
+            "name": "Undead Thralls",
+            "level": 1
+          },
+          {
+            "name": "Inured to Undeath",
+            "level": 1
+          },
+          {
+            "name": "Command Undead",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "school-of-transmutation|phb",
+        "name": "School of Transmutation",
+        "shortName": "Transmutation",
+        "source": "PHB",
+        "subclassFeatures": [
+          {
+            "name": "School of Transmutation",
+            "level": 1
+          },
+          {
+            "name": "Transmuter's Stone",
+            "level": 1
+          },
+          {
+            "name": "Shapechanger",
+            "level": 1
+          },
+          {
+            "name": "Master Transmuter",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "war-magic|xge",
+        "name": "War Magic",
+        "shortName": "War",
+        "source": "XGE",
+        "subclassFeatures": [
+          {
+            "name": "War Magic",
+            "level": 1
+          },
+          {
+            "name": "Power Surge",
+            "level": 1
+          },
+          {
+            "name": "Durable Magic",
+            "level": 1
+          },
+          {
+            "name": "Deflecting Shroud",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "chronurgy-magic|egw",
+        "name": "Chronurgy Magic",
+        "shortName": "Chronurgy",
+        "source": "EGW",
+        "subclassFeatures": [
+          {
+            "name": "Chronurgy Magic",
+            "level": 1
+          },
+          {
+            "name": "Momentary Stasis",
+            "level": 1
+          },
+          {
+            "name": "Arcane Abeyance",
+            "level": 1
+          },
+          {
+            "name": "Convergent Future",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "graviturgy-magic|egw",
+        "name": "Graviturgy Magic",
+        "shortName": "Graviturgy",
+        "source": "EGW",
+        "subclassFeatures": [
+          {
+            "name": "Graviturgy Magic",
+            "level": 1
+          },
+          {
+            "name": "Gravity Well",
+            "level": 1
+          },
+          {
+            "name": "Violent Attraction",
+            "level": 1
+          },
+          {
+            "name": "Event Horizon",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "bladesinging|tce",
+        "name": "Bladesinging",
+        "shortName": "Bladesinging",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Bladesinging",
+            "level": 1
+          },
+          {
+            "name": "Extra Attack",
+            "level": 1
+          },
+          {
+            "name": "Song of Defense",
+            "level": 1
+          },
+          {
+            "name": "Song of Victory",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "order-of-scribes|tce",
+        "name": "Order of Scribes",
+        "shortName": "Scribes",
+        "source": "TCE",
+        "subclassFeatures": [
+          {
+            "name": "Order of Scribes",
+            "level": 1
+          },
+          {
+            "name": "Manifest Mind",
+            "level": 1
+          },
+          {
+            "name": "Master Scrivener",
+            "level": 1
+          },
+          {
+            "name": "One with the Word",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "key": "blood-magic|tdcsr",
+        "name": "Blood Magic",
+        "shortName": "Blood Magic",
+        "source": "TDCSR",
+        "subclassFeatures": [
+          {
+            "name": "Blood Magic",
+            "level": 1
+          },
+          {
+            "name": "Bond of Mutual Suffering",
+            "level": 1
+          },
+          {
+            "name": "Glyph of Hemorrhaging",
+            "level": 1
+          },
+          {
+            "name": "Bond of Mutual Suffering (14th Level)",
+            "level": 1
+          },
+          {
+            "name": "Thicker than Water",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  }
+}
