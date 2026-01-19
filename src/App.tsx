@@ -1,39 +1,51 @@
+import { useState } from 'react';
+import { AppShell } from './components/layout';
+import type { ViewName } from './components/layout';
+
 function App() {
+  const [currentView, setCurrentView] = useState<ViewName>('list');
+  
+  // Placeholder - will come from state/storage later
+  const hasCharacters = false;
+
   return (
-    <div className="min-h-screen p-8">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4">
-          D&D 5E Character Manager
-        </h1>
-        <p className="text-lg text-ink-600 mb-8">
-          Foundation ready. Tailwind is working!
-        </p>
-        
-        {/* Test our custom theme colors */}
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 bg-parchment-200 rounded-lg border border-parchment-400">
-            <h2 className="font-display text-xl mb-2">Parchment Theme</h2>
-            <p className="text-ink-700">This box uses our custom parchment colors.</p>
-          </div>
-          
-          <div className="p-4 bg-ink-800 rounded-lg text-parchment-100">
-            <h2 className="font-display text-xl mb-2">Ink Theme</h2>
-            <p className="text-parchment-300">Dark mode styling option.</p>
-          </div>
-          
-          <div className="p-4 bg-gold-100 rounded-lg border border-gold-400">
-            <h2 className="font-display text-xl text-gold-800 mb-2">Gold Accent</h2>
-            <p className="text-gold-700">For highlights and special elements.</p>
-          </div>
-          
-          <div className="p-4 bg-blood-100 rounded-lg border border-blood-300">
-            <h2 className="font-display text-xl text-blood-700 mb-2">Blood Red</h2>
-            <p className="text-blood-600">For HP, damage, and warnings.</p>
-          </div>
+    <AppShell 
+      currentView={currentView} 
+      onNavigate={setCurrentView}
+      hasCharacters={hasCharacters}
+    >
+      {/* Temporary view content - will be replaced with real components */}
+      {currentView === 'list' && (
+        <div className="bg-parchment-50 rounded-lg border border-parchment-300 p-8 text-center">
+          <h2 className="text-2xl font-display text-ink-800 mb-4">Your Characters</h2>
+          <p className="text-ink-600 mb-6">No characters yet. Create your first adventurer!</p>
+          <button 
+            onClick={() => setCurrentView('create')}
+            className="bg-gold-500 hover:bg-gold-600 text-ink-900 font-bold px-6 py-2 rounded-lg transition-colors"
+          >
+            Create Character
+          </button>
         </div>
-      </div>
-    </div>
-  )
+      )}
+      
+      {currentView === 'create' && (
+        <div className="bg-parchment-50 rounded-lg border border-parchment-300 p-8">
+          <h2 className="text-2xl font-display text-ink-800 mb-4">Create New Character</h2>
+          <p className="text-ink-600">Character creation wizard will go here.</p>
+          <p className="text-ink-500 mt-4 text-sm">
+            Steps: Race → Class → Abilities → Background → Review
+          </p>
+        </div>
+      )}
+      
+      {currentView === 'sheet' && (
+        <div className="bg-parchment-50 rounded-lg border border-parchment-300 p-8">
+          <h2 className="text-2xl font-display text-ink-800 mb-4">Character Sheet</h2>
+          <p className="text-ink-600">Select a character to view their sheet.</p>
+        </div>
+      )}
+    </AppShell>
+  );
 }
 
-export default App
+export default App;
