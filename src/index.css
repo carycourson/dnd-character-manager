@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for the D&D theme */
+@layer base {
+  body {
+    @apply bg-parchment-100 text-ink-800 font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-ink-900;
+  }
+}
+
+/* Custom component classes can go here later */
+@layer components {
+  /* Example: .btn-primary { @apply bg-gold-500 text-white px-4 py-2 rounded; } */
+}
+
+/* Custom utilities can go here later */
+@layer utilities {
+  /* Example: .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); } */
+}
