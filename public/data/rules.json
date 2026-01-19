@@ -20,11 +20,150 @@
   },
 
   "abilityScoreMethods": {
-    "pointBuy": {
-      "description": "Spend 27 points to customize ability scores",
-      "totalPoints": 27,
-      "minScore": 8,
-      "maxScore": 15,
+    "3d6_straight": {
+      "type": "roll",
+      "label": "3d6 Straight",
+      "description": "Roll 3d6 for each ability score in order. Old school!",
+      "roll": {
+        "dice": 3,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": null,
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "straight"
+    },
+
+    "3d6_assign": {
+      "type": "roll",
+      "label": "3d6 Assign",
+      "description": "Roll 3d6 six times, assign results to abilities as desired",
+      "roll": {
+        "dice": 3,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": null,
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "user"
+    },
+
+    "3d6_best_of_six": {
+      "type": "roll",
+      "label": "3d6 Best of Six",
+      "description": "For each stat, roll 3d6 six times and keep the highest result",
+      "roll": {
+        "dice": 3,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": null,
+        "attempts": 6,
+        "attemptsKeep": { "count": 1, "highest": true }
+      },
+      "assignment": "straight"
+    },
+
+    "4d6_drop_lowest": {
+      "type": "roll",
+      "label": "4d6 Drop Lowest",
+      "description": "Roll 4d6, drop the lowest die. The classic method.",
+      "roll": {
+        "dice": 4,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": null,
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "user"
+    },
+
+    "5d6_drop_lowest_two": {
+      "type": "roll",
+      "label": "5d6 Drop Lowest Two",
+      "description": "Roll 5d6, drop the two lowest dice. Heroic stats!",
+      "roll": {
+        "dice": 5,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": null,
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "user"
+    },
+
+    "4d6_reroll_ones": {
+      "type": "roll",
+      "label": "4d6 Reroll 1s",
+      "description": "Roll 4d6, reroll any 1s once, drop lowest die",
+      "roll": {
+        "dice": 4,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": { "values": [1], "count": 1 },
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "user"
+    },
+
+    "5d6_reroll_ones_unlimited": {
+      "type": "roll",
+      "label": "5d6 No Ones",
+      "description": "Roll 5d6, reroll 1s until no 1s remain, keep highest 3",
+      "roll": {
+        "dice": 5,
+        "sides": 6,
+        "keep": { "count": 3, "highest": true },
+        "reroll": { "values": [1], "count": -1 },
+        "attempts": 1,
+        "attemptsKeep": null
+      },
+      "assignment": "user"
+    },
+
+    "2d6_plus_6": {
+      "type": "roll",
+      "label": "2d6+6",
+      "description": "Roll 2d6 and add 6. Guaranteed minimum of 8.",
+      "roll": {
+        "dice": 2,
+        "sides": 6,
+        "keep": { "count": 2, "highest": true },
+        "reroll": null,
+        "attempts": 1,
+        "attemptsKeep": null,
+        "modifier": 6
+      },
+      "assignment": "user"
+    },
+
+    "standard_array": {
+      "type": "array",
+      "label": "Standard Array",
+      "description": "Assign 15, 14, 13, 12, 10, 8 to your abilities",
+      "values": [15, 14, 13, 12, 10, 8],
+      "assignment": "user"
+    },
+
+    "heroic_array": {
+      "type": "array",
+      "label": "Heroic Array",
+      "description": "Assign 17, 15, 14, 13, 11, 9 to your abilities",
+      "values": [17, 15, 14, 13, 11, 9],
+      "assignment": "user"
+    },
+
+    "standard_point_buy": {
+      "type": "pointBuy",
+      "label": "Standard Point Buy",
+      "description": "27 points to spend. Scores range from 8-15.",
+      "points": 27,
+      "min": 8,
+      "max": 15,
       "costs": {
         "8": 0,
         "9": 1,
@@ -36,21 +175,80 @@
         "15": 9
       }
     },
-    "standardArray": {
-      "description": "Assign these fixed values to your abilities",
-      "values": [15, 14, 13, 12, 10, 8]
+
+    "heroic_point_buy": {
+      "type": "pointBuy",
+      "label": "Heroic Point Buy",
+      "description": "35 points to spend. Scores range from 8-17.",
+      "points": 35,
+      "min": 8,
+      "max": 17,
+      "costs": {
+        "8": 0,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 7,
+        "15": 9,
+        "16": 12,
+        "17": 15
+      }
     },
-    "roll": {
-      "description": "Roll 4d6, drop the lowest die, six times",
-      "diceCount": 4,
-      "diceSides": 6,
-      "keepHighest": 3,
-      "rollCount": 6
+
+    "legendary_point_buy": {
+      "type": "pointBuy",
+      "label": "Legendary Point Buy",
+      "description": "45 points to spend. Scores range from 8-18.",
+      "points": 45,
+      "min": 8,
+      "max": 18,
+      "costs": {
+        "8": 0,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 7,
+        "15": 9,
+        "16": 12,
+        "17": 15,
+        "18": 19
+      }
     },
+
+    "epic_point_buy": {
+      "type": "pointBuy",
+      "label": "Epic Point Buy",
+      "description": "60 points to spend. Scores range from 8-20.",
+      "points": 60,
+      "min": 8,
+      "max": 20,
+      "costs": {
+        "8": 0,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 7,
+        "15": 9,
+        "16": 12,
+        "17": 15,
+        "18": 19,
+        "19": 24,
+        "20": 30
+      }
+    },
+
     "manual": {
+      "type": "manual",
+      "label": "Manual Entry",
       "description": "Enter scores manually (DM discretion)",
-      "minScore": 3,
-      "maxScore": 18
+      "min": 1,
+      "max": 30
     }
   },
 
