@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AppShell } from './components/layout';
 import type { ViewName } from './components/layout';
 import { useGameData } from './contexts/GameDataContext';
+import { CreationWizard } from './components/creation';
 
 function App() {
   const [currentView, setCurrentView] = useState<ViewName>('list');
@@ -9,6 +10,12 @@ function App() {
   
   // Placeholder - will come from state/storage later
   const hasCharacters = false;
+
+  const handleCharacterCreated = (characterId: string) => {
+    console.log('Character created:', characterId);
+    // TODO: Navigate to character sheet
+    setCurrentView('list');
+  };
 
   // Show loading state
   if (isLoading) {
@@ -77,13 +84,10 @@ function App() {
       )}
       
       {currentView === 'create' && (
-        <div className="bg-parchment-50 rounded-lg border border-parchment-300 p-8">
-          <h2 className="text-2xl font-display text-ink-800 mb-4">Create New Character</h2>
-          <p className="text-ink-600">Character creation wizard will go here.</p>
-          <p className="text-ink-500 mt-4 text-sm">
-            Steps: Race → Class → Abilities → Background → Review
-          </p>
-        </div>
+        <CreationWizard 
+          onComplete={handleCharacterCreated}
+          onCancel={() => setCurrentView('list')}
+        />
       )}
       
       {currentView === 'sheet' && (

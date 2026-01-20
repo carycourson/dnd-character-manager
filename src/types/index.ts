@@ -579,3 +579,6 @@ export interface MigrationInfo {
   toVersion: string;
   migrationFn: (state: CharacterState) => CharacterState;
 }
+
+// Re-export character draft types
+export * from './characterDraft';
