@@ -3,8 +3,7 @@ node_modules/
 dist/
 build/
 
-# Ignore large D&D data sources (the AI doesn't need to read 20MB of JSON)
-# Adjust these paths to match your folder structure
+# Ignore large data sources
 data-source/
 
 # Ignore media/logs
