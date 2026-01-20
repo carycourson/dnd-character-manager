@@ -28,7 +28,7 @@ function rollDice(config: AbilityScoreMethodConfig): number {
 
   // Handle rerolls
   if (reroll && reroll.values) {
-    const maxRerolls = reroll.count === -1 ? 100 : reroll.count; // -1 means unlimited
+    const maxRerolls = reroll.count === -1 ? 100 : reroll.count;
     for (let r = 0; r < maxRerolls; r++) {
       let rerolled = false;
       rolls = rolls.map(roll => {
@@ -43,7 +43,7 @@ function rollDice(config: AbilityScoreMethodConfig): number {
   }
 
   // Keep highest/lowest
-  rolls.sort((a, b) => b - a); // Sort descending
+  rolls.sort((a, b) => b - a);
   const kept = keep.highest 
     ? rolls.slice(0, keep.count)
     : rolls.slice(-keep.count);
@@ -57,13 +57,11 @@ function rollForAbility(config: AbilityScoreMethodConfig): number {
 
   const { attempts = 1, attemptsKeep } = roll;
 
-  // Roll multiple attempts if configured
   const attemptResults: number[] = [];
   for (let i = 0; i < attempts; i++) {
     attemptResults.push(rollDice(config));
   }
 
-  // Keep best attempt(s)
   if (attemptsKeep) {
     attemptResults.sort((a, b) => b - a);
     return attemptResults.slice(0, attemptsKeep.count)[0];
@@ -79,32 +77,34 @@ export function RollPanel({ config, abilityKeys, scores, rolledValues, onRoll, o
   // Track selected value by INDEX
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   
-  // Track which rolled value indices have been assigned
-  const [assignedIndices, setAssignedIndices] = useState<Set<number>>(new Set());
+  // Track which index is assigned to which ability (ability -> index)
+  const [abilityToIndex, setAbilityToIndex] = useState<Record<string, number>>({});
 
   const assignment = config.assignment || 'user';
   const isStraightAssignment = assignment === 'straight';
 
+  // Compute which indices are currently assigned
+  const assignedIndices = new Set(Object.values(abilityToIndex));
+
   const handleRollAll = () => {
     setIsRolling(true);
-    setAssignedIndices(new Set());
+    setAbilityToIndex({});
     setSelectedIndex(null);
     
-    // Simulate rolling delay
     setTimeout(() => {
       const newValues = abilityKeys.map(() => rollForAbility(config));
       onRoll(newValues);
       
       if (isStraightAssignment) {
-        // Auto-assign in order
         const newScores: Record<string, number> = {};
+        const newAbilityToIndex: Record<string, number> = {};
         abilityKeys.forEach((key, index) => {
           newScores[key] = newValues[index];
+          newAbilityToIndex[key] = index;
         });
-        setAssignedIndices(new Set(newValues.map((_, i) => i)));
+        setAbilityToIndex(newAbilityToIndex);
         onChange(newScores as unknown as AbilityScores);
       } else {
-        // Clear scores for manual assignment
         const clearedScores: Record<string, null> = {};
         abilityKeys.forEach(key => {
           clearedScores[key] = null;
@@ -126,20 +126,28 @@ export function RollPanel({ config, abilityKeys, scores, rolledValues, onRoll, o
     if (isStraightAssignment) return;
     
     if (selectedIndex === null) {
-      // If clicking an assigned ability with no selection, could clear it
-      // For now, just return
+      // If clicking an assigned ability with no selection, clear it
+      if (scores[abilityKey] !== null && abilityToIndex[abilityKey] !== undefined) {
+        const newScores = { ...scores, [abilityKey]: null };
+        const newAbilityToIndex = { ...abilityToIndex };
+        delete newAbilityToIndex[abilityKey];
+        
+        setAbilityToIndex(newAbilityToIndex);
+        onPartialChange(newScores);
+      }
       return;
     }
     
     const valueToAssign = rolledValues[selectedIndex];
     const newScores = { ...scores, [abilityKey]: valueToAssign };
-    const newAssignedIndices = new Set(assignedIndices);
-    newAssignedIndices.add(selectedIndex);
+    const newAbilityToIndex = { ...abilityToIndex };
     
-    setAssignedIndices(newAssignedIndices);
+    // Overwrite any existing assignment for this ability
+    newAbilityToIndex[abilityKey] = selectedIndex;
+    
+    setAbilityToIndex(newAbilityToIndex);
     setSelectedIndex(null);
     
-    // Check if all assigned
     const allAssigned = abilityKeys.every(k => newScores[k] !== null);
     if (allAssigned) {
       onChange(newScores as unknown as AbilityScores);
@@ -155,11 +163,10 @@ export function RollPanel({ config, abilityKeys, scores, rolledValues, onRoll, o
       <p className="text-ink-600 mb-4">
         {config.description}
         {!isStraightAssignment && rolledValues.length > 0 && (
-          <span className="block text-sm mt-1">Click a rolled value, then click an ability to assign it.</span>
+          <span className="block text-sm mt-1">Click a rolled value, then click an ability to assign it. Click an assigned ability to clear it.</span>
         )}
       </p>
 
-      {/* Roll button */}
       <button
         onClick={handleRollAll}
         disabled={isRolling}
@@ -174,7 +181,6 @@ export function RollPanel({ config, abilityKeys, scores, rolledValues, onRoll, o
         {isRolling ? '🎲 Rolling...' : rolledValues.length > 0 ? '🎲 Roll Again' : '🎲 Roll Ability Scores'}
       </button>
 
-      {/* Rolled values */}
       {rolledValues.length > 0 && !isStraightAssignment && (
         <div className="mb-6">
           <p className="text-sm font-medium text-ink-700 mb-2">Rolled Values (click to assign)</p>
@@ -206,7 +212,6 @@ export function RollPanel({ config, abilityKeys, scores, rolledValues, onRoll, o
         </div>
       )}
 
-      {/* Ability slots */}
       {rolledValues.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
           {abilityKeys.map((key, index) => {

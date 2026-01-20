@@ -15,11 +15,14 @@ export function ArrayAssignPanel({ config, abilityKeys, scores, onChange, onPart
   const { rules } = useGameData();
   const values = config.values || [];
   
-  // Track selected value by INDEX, not by value
+  // Track selected value by INDEX
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   
-  // Track which value indices have been assigned
-  const [assignedIndices, setAssignedIndices] = useState<Set<number>>(new Set());
+  // Track which index is assigned to which ability (ability -> index)
+  const [abilityToIndex, setAbilityToIndex] = useState<Record<string, number>>({});
+
+  // Compute which indices are currently assigned
+  const assignedIndices = new Set(Object.values(abilityToIndex));
 
   const handleValueClick = (index: number) => {
     if (assignedIndices.has(index)) return;
@@ -29,33 +32,26 @@ export function ArrayAssignPanel({ config, abilityKeys, scores, onChange, onPart
   const handleAbilityClick = (abilityKey: string) => {
     if (selectedIndex === null) {
       // If clicking an assigned ability with no selection, clear it
-      if (scores[abilityKey] !== null) {
-        // Find which index was assigned to this ability and free it
+      if (scores[abilityKey] !== null && abilityToIndex[abilityKey] !== undefined) {
         const newScores = { ...scores, [abilityKey]: null };
+        const newAbilityToIndex = { ...abilityToIndex };
+        delete newAbilityToIndex[abilityKey];
         
-        // Find and remove the assigned index for this ability
-        // We need to track which index goes to which ability
-        const newAssignedIndices = new Set(assignedIndices);
-        // For simplicity, we'll rebuild assigned indices from scores
-        // This is a bit inefficient but works
-        
+        setAbilityToIndex(newAbilityToIndex);
         onPartialChange(newScores);
-        setAssignedIndices(prev => {
-          const newSet = new Set(prev);
-          // We need to find which index had this value - tricky with duplicates
-          // For now, just clear and let user reassign
-          return newSet;
-        });
       }
       return;
     }
     
     const valueToAssign = values[selectedIndex];
     const newScores = { ...scores, [abilityKey]: valueToAssign };
-    const newAssignedIndices = new Set(assignedIndices);
-    newAssignedIndices.add(selectedIndex);
+    const newAbilityToIndex = { ...abilityToIndex };
     
-    setAssignedIndices(newAssignedIndices);
+    // If this ability already had an index assigned, it will be overwritten
+    // (the old index is automatically freed when we set the new one)
+    newAbilityToIndex[abilityKey] = selectedIndex;
+    
+    setAbilityToIndex(newAbilityToIndex);
     setSelectedIndex(null);
     
     // Check if all abilities are assigned
@@ -69,13 +65,21 @@ export function ArrayAssignPanel({ config, abilityKeys, scores, onChange, onPart
 
   const handleAutoAssign = () => {
     // Assign values in order (highest to first ability, etc.)
-    const sortedValues = [...values].sort((a, b) => b - a);
+    const sortedIndices = values
+      .map((value, index) => ({ value, index }))
+      .sort((a, b) => b.value - a.value)
+      .map(item => item.index);
+    
     const newScores: Record<string, number> = {};
-    abilityKeys.forEach((key, index) => {
-      newScores[key] = sortedValues[index];
+    const newAbilityToIndex: Record<string, number> = {};
+    
+    abilityKeys.forEach((key, i) => {
+      const index = sortedIndices[i];
+      newScores[key] = values[index];
+      newAbilityToIndex[key] = index;
     });
-    // Mark all indices as assigned
-    setAssignedIndices(new Set(values.map((_, i) => i)));
+    
+    setAbilityToIndex(newAbilityToIndex);
     setSelectedIndex(null);
     onChange(newScores as unknown as AbilityScores);
   };
@@ -85,7 +89,7 @@ export function ArrayAssignPanel({ config, abilityKeys, scores, onChange, onPart
     abilityKeys.forEach(key => {
       clearedScores[key] = null;
     });
-    setAssignedIndices(new Set());
+    setAbilityToIndex({});
     setSelectedIndex(null);
     onPartialChange(clearedScores);
   };
@@ -96,7 +100,7 @@ export function ArrayAssignPanel({ config, abilityKeys, scores, onChange, onPart
     <div>
       {/* Instructions */}
       <p className="text-ink-600 mb-4">
-        Click a value below, then click an ability to assign it.
+        Click a value below, then click an ability to assign it. Click an assigned ability to clear it.
       </p>
 
       {/* Available values */}
