@@ -70,7 +70,7 @@ export interface CharacterState {
   
   // Ability scores (base values before racial modifiers)
   baseAbilityScores: AbilityScores;
-  abilityScoreMethod: 'pointBuy' | 'standardArray' | 'roll' | 'manual';
+  abilityScoreMethod: string;
   
   // All choices made during creation and level-up
   choices: FeatureChoice[];

@@ -74,17 +74,17 @@ export function isBackgroundStepComplete(draft: CharacterDraft): boolean {
 
 export function canProceedToStep(draft: CharacterDraft, step: CreationStep): boolean {
   switch (step) {
-    case 'race':
-      return true;
-    case 'class':
-      return isRaceStepComplete(draft);
     case 'abilities':
-      return isRaceStepComplete(draft) && isClassStepComplete(draft);
+      return true;  // First step, always accessible
+    case 'race':
+      return isAbilitiesStepComplete(draft);
+    case 'class':
+      return isAbilitiesStepComplete(draft) && isRaceStepComplete(draft);
     case 'background':
-      return isRaceStepComplete(draft) && isClassStepComplete(draft) && isAbilitiesStepComplete(draft);
+      return isAbilitiesStepComplete(draft) && isRaceStepComplete(draft) && isClassStepComplete(draft);
     case 'review':
-      return isRaceStepComplete(draft) && isClassStepComplete(draft) && 
-             isAbilitiesStepComplete(draft) && isBackgroundStepComplete(draft);
+      return isAbilitiesStepComplete(draft) && isRaceStepComplete(draft) && 
+             isClassStepComplete(draft) && isBackgroundStepComplete(draft);
     default:
       return false;
   }

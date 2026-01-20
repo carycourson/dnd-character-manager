@@ -11,7 +11,7 @@ interface WizardNavigationProps {
   isCreating?: boolean;
 }
 
-const STEP_ORDER: CreationStep[] = ['race', 'class', 'abilities', 'background', 'review'];
+const STEP_ORDER: CreationStep[] = ['abilities', 'race', 'class', 'background', 'review'];
 
 export function WizardNavigation({ 
   currentStep, 

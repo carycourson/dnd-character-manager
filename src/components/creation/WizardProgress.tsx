@@ -13,9 +13,9 @@ interface WizardProgressProps {
 }
 
 const STEPS: { key: CreationStep; label: string; icon: string }[] = [
+  { key: 'abilities', label: 'Abilities', icon: '💪' },
   { key: 'race', label: 'Race', icon: '🧝' },
   { key: 'class', label: 'Class', icon: '⚔️' },
-  { key: 'abilities', label: 'Abilities', icon: '💪' },
   { key: 'background', label: 'Background', icon: '📜' },
   { key: 'review', label: 'Review', icon: '✨' },
 ];
@@ -32,7 +32,7 @@ function isStepComplete(draft: CharacterDraft, step: CreationStep): boolean {
 }
 
 function canClickStep(draft: CharacterDraft, targetStep: CreationStep, currentStep: CreationStep): boolean {
-  const stepOrder: CreationStep[] = ['race', 'class', 'abilities', 'background', 'review'];
+  const stepOrder: CreationStep[] = ['abilities', 'race', 'class', 'background', 'review'];
   const targetIndex = stepOrder.indexOf(targetStep);
   const currentIndex = stepOrder.indexOf(currentStep);
   

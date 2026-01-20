@@ -10,10 +10,10 @@ interface CreationWizardProps {
   onCancel: () => void;
 }
 
-const STEP_ORDER: CreationStep[] = ['race', 'class', 'abilities', 'background', 'review'];
+const STEP_ORDER: CreationStep[] = ['abilities', 'race', 'class', 'background', 'review'];
 
 export function CreationWizard({ onComplete, onCancel }: CreationWizardProps) {
-  const [currentStep, setCurrentStep] = useState<CreationStep>('race');
+  const [currentStep, setCurrentStep] = useState<CreationStep>(STEP_ORDER[0]);
   const [draft, setDraft] = useState<CharacterDraft>({});
   const [isCreating, setIsCreating] = useState(false);
   const [error, setError] = useState<string | null>(null);
