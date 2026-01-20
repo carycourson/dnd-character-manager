@@ -2,11 +2,14 @@ import type { WizardStepProps } from '../../../types';
 import { useGameData } from '../../../contexts/GameDataContext';
 
 export function ReviewStep({ draft, onUpdate }: WizardStepProps) {
-  const { races, classes, backgrounds } = useGameData();
+  const { races, classes, backgrounds, rules } = useGameData();
   
   const race = draft.raceKey ? races[draft.raceKey] : null;
   const cls = draft.classKey ? classes[draft.classKey] : null;
   const background = draft.backgroundKey ? backgrounds[draft.backgroundKey] : null;
+  
+  // Get ability keys from rules data
+  const abilityKeys = Object.keys(rules.abilities);
 
   return (
     <div>
@@ -37,7 +40,9 @@ export function ReviewStep({ draft, onUpdate }: WizardStepProps) {
         </div>
         <div className="flex justify-between items-center py-2 border-b border-parchment-300">
           <span className="text-ink-600">Class</span>
-          <span className="font-medium text-ink-800">{cls?.name || '—'} (Level 1)</span>
+          <span className="font-medium text-ink-800">
+            {cls?.name || '—'}{cls ? ' (Level 1)' : ''}
+          </span>
         </div>
         <div className="flex justify-between items-center py-2 border-b border-parchment-300">
           <span className="text-ink-600">Background</span>
@@ -47,9 +52,9 @@ export function ReviewStep({ draft, onUpdate }: WizardStepProps) {
           <span className="text-ink-600 block mb-2">Ability Scores</span>
           {draft.baseAbilityScores ? (
             <div className="flex flex-wrap gap-2">
-              {Object.entries(draft.baseAbilityScores).map(([ability, score]) => (
+              {abilityKeys.map((ability) => (
                 <span key={ability} className="bg-white px-2 py-1 rounded border border-parchment-300 text-sm">
-                  <strong className="uppercase">{ability}</strong>: {score}
+                  <strong className="uppercase">{ability}</strong>: {draft.baseAbilityScores![ability as keyof typeof draft.baseAbilityScores]}
                 </span>
               ))}
             </div>

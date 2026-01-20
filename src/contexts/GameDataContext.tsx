@@ -8,6 +8,7 @@ import type {
   Spell, 
   Item, 
   Feat,
+  Rules,
   Manifest
 } from '../types/gameData';
 
@@ -34,6 +35,38 @@ interface GameDataContextValue extends GameData {
   featList: Feat[];
 }
 
+const defaultRules: Rules = {
+  version: '',
+  game: '',
+  formulas: {},
+  abilityScoreMethods: {},
+  abilities: {},
+  skills: {},
+  savingThrows: {},
+  proficiencyBonusTable: {},
+  multiclassSpellSlots: {
+    description: '',
+    table: {},
+    casterLevelMultipliers: {},
+    fullCasters: [],
+    halfCasters: [],
+    thirdCasters: [],
+    pactCasters: [],
+  },
+  hitDice: {},
+  sizeCategories: {},
+  conditions: [],
+  damageTypes: [],
+  armorClassCalculations: {},
+  experienceThresholds: {},
+  languages: { standard: [], exotic: [] },
+  currency: { exchangeRates: {}, names: {} },
+  rest: {
+    shortRest: { duration: '', hitDiceRecovery: false },
+    longRest: { duration: '', hpRecovery: '', hitDiceRecoveryFormula: '', hitDiceRecoveryMin: 0 },
+  },
+};
+
 const defaultContextValue: GameDataContextValue = {
   races: {},
   classes: {},
@@ -41,6 +74,7 @@ const defaultContextValue: GameDataContextValue = {
   spells: {},
   items: {},
   feats: {},
+  rules: defaultRules,
   manifest: {
     version: '',
     generatedAt: '',
@@ -88,6 +122,7 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
     spells: {},
     items: {},
     feats: {},
+    rules: defaultRules,
     manifest: defaultContextValue.manifest,
     isLoaded: false,
   });
@@ -108,6 +143,7 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
           spellsRes,
           itemsRes,
           featsRes,
+          rulesRes,
           manifestRes,
         ] = await Promise.all([
           fetch('/data/races.json'),
@@ -116,6 +152,7 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
           fetch('/data/spells.json'),
           fetch('/data/items.json'),
           fetch('/data/feats.json'),
+          fetch('/data/rules.json'),
           fetch('/data/manifest.json'),
         ]);
 
@@ -127,6 +164,7 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
           { name: 'spells', res: spellsRes },
           { name: 'items', res: itemsRes },
           { name: 'feats', res: featsRes },
+          { name: 'rules', res: rulesRes },
           { name: 'manifest', res: manifestRes },
         ];
 
@@ -137,13 +175,14 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
         }
 
         // Parse JSON
-        const [races, classes, backgrounds, spells, items, feats, manifest] = await Promise.all([
+        const [races, classes, backgrounds, spells, items, feats, rules, manifest] = await Promise.all([
           racesRes.json() as Promise<Record<string, Race>>,
           classesRes.json() as Promise<Record<string, Class>>,
           backgroundsRes.json() as Promise<Record<string, Background>>,
           spellsRes.json() as Promise<Record<string, Spell>>,
           itemsRes.json() as Promise<Record<string, Item>>,
           featsRes.json() as Promise<Record<string, Feat>>,
+          rulesRes.json() as Promise<Rules>,
           manifestRes.json() as Promise<Manifest>,
         ]);
 
@@ -154,11 +193,12 @@ export function GameDataProvider({ children }: GameDataProviderProps) {
           spells,
           items,
           feats,
+          rules,
           manifest,
           isLoaded: true,
         });
 
-        console.log(`[GameData] Loaded: ${Object.keys(races).length} races, ${Object.keys(classes).length} classes, ${Object.keys(backgrounds).length} backgrounds, ${Object.keys(spells).length} spells, ${Object.keys(items).length} items, ${Object.keys(feats).length} feats`);
+        console.log(`[GameData] Loaded: ${Object.keys(races).length} races, ${Object.keys(classes).length} classes, ${Object.keys(backgrounds).length} backgrounds, ${Object.keys(spells).length} spells, ${Object.keys(items).length} items, ${Object.keys(feats).length} feats, ${Object.keys(rules.abilityScoreMethods).length} ability score methods`);
       } catch (err) {
         const message = err instanceof Error ? err.message : 'Unknown error loading game data';
         console.error('[GameData] Load error:', message);

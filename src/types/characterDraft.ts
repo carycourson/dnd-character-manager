@@ -5,26 +5,19 @@
  * Fields become required as the user progresses through the wizard.
  */
 
-import type { AbilityScores, FeatureChoice, Currency, EquipmentSlot } from './index';
+import type { AbilityScores, FeatureChoice } from './index';
 
-export type AbilityScoreMethod = 
-  | '3d6_straight' 
-  | '3d6_assign' 
-  | '3d6_best_of_six'
-  | '4d6_drop_lowest' 
-  | '5d6_drop_lowest_two'
-  | '4d6_reroll_ones'
-  | '5d6_reroll_ones_unlimited'
-  | '2d6_plus_6'
-  | 'standard_array'
-  | 'heroic_array'
-  | 'standard_point_buy'
-  | 'heroic_point_buy'
-  | 'legendary_point_buy'
-  | 'epic_point_buy'
-  | 'manual';
+/**
+ * Ability score method key - validated at runtime against rules.abilityScoreMethods
+ * We use string here because the valid values come from JSON data, not code.
+ */
+export type AbilityScoreMethod = string;
 
-export type CreationStep = 'race' | 'class' | 'abilities' | 'background' | 'review';
+/**
+ * Creation wizard steps - this is UI structure, not game data.
+ * The order and existence of these steps is an application design choice.
+ */
+export type CreationStep = 'abilities' | 'race' | 'class' | 'background' | 'review';
 
 export interface CharacterDraft {
   // Step 1: Race

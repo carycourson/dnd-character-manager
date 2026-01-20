@@ -248,6 +248,81 @@ export interface Manifest {
   };
 }
 
+// =============================================================================
+// RULES CONFIG
+// =============================================================================
+
+export interface RollConfig {
+  dice: number;
+  sides: number;
+  keep: { count: number; highest: boolean };
+  reroll: { values: number[]; count: number } | null;
+  attempts: number;
+  attemptsKeep: { count: number; highest: boolean } | null;
+  modifier?: number;
+}
+
+export interface AbilityScoreMethodConfig {
+  type: 'roll' | 'array' | 'pointBuy' | 'manual';
+  label: string;
+  description: string;
+  // Roll type
+  roll?: RollConfig;
+  assignment?: 'straight' | 'user';
+  // Array type
+  values?: number[];
+  // Point buy type
+  points?: number;
+  min?: number;
+  max?: number;
+  costs?: Record<string, number>;
+}
+
+export interface AbilityConfig {
+  name: string;
+  description: string;
+}
+
+export interface SkillConfig {
+  name: string;
+  ability: string;
+  description: string;
+}
+
+export interface Rules {
+  version: string;
+  game: string;
+  formulas: Record<string, string>;
+  abilityScoreMethods: Record<string, AbilityScoreMethodConfig>;
+  abilities: Record<string, AbilityConfig>;
+  skills: Record<string, SkillConfig>;
+  savingThrows: Record<string, { name: string }>;
+  proficiencyBonusTable: Record<string, number>;
+  multiclassSpellSlots: {
+    description: string;
+    table: Record<string, number[]>;
+    casterLevelMultipliers: Record<string, number>;
+    fullCasters: string[];
+    halfCasters: string[];
+    thirdCasters: string[];
+    pactCasters: string[];
+  };
+  hitDice: Record<string, number>;
+  sizeCategories: Record<string, { space: string; carryMultiplier: number }>;
+  conditions: string[];
+  damageTypes: string[];
+  armorClassCalculations: Record<string, { formula: string; description: string }>;
+  experienceThresholds: Record<string, number>;
+  languages: { standard: string[]; exotic: string[] };
+  currency: {
+    exchangeRates: Record<string, number>;
+    names: Record<string, string>;
+  };
+  rest: {
+    shortRest: { duration: string; hitDiceRecovery: boolean };
+    longRest: { duration: string; hpRecovery: string; hitDiceRecoveryFormula: string; hitDiceRecoveryMin: number };
+  };
+}
 export interface GameData {
   races: Record<string, Race>;
   classes: Record<string, Class>;
@@ -255,6 +330,7 @@ export interface GameData {
   spells: Record<string, Spell>;
   items: Record<string, Item>;
   feats: Record<string, Feat>;
+  rules: Rules;
   manifest: Manifest;
   isLoaded: boolean;
 }
